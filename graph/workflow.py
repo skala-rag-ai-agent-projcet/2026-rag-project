@@ -14,9 +14,9 @@ from agents.report_writer import report_writer_node
 # ── Policy gate (pass-through) ──────────────────────────────────────
 def policy_gate_node(state: dict) -> dict:
     """Fan-in 노드: tech_analysis + market_policy 완료 후 policy_violation 확인."""
-    violation = state.get("policy_violation", False)
-    reason = state.get("policy_violation_reason", "해당 없음")
-    name = state.get("startup_profile", {}).get("company_name", "Unknown")
+    violation = state.get("working", {}).get("policy_violation", False)
+    reason = state.get("working", {}).get("policy_violation_reason", "해당 없음")
+    name = state.get("current_startup", {}).get("company_profile", {}).get("company_name", "Unknown")
 
     if violation:
         print(f"\n[Policy Gate] ⚠️ {name}: 정책 위반 감지 — {reason}")
@@ -29,7 +29,7 @@ def policy_gate_node(state: dict) -> dict:
 # ── Routing functions ────────────────────────────────────────────────
 def route_after_domain_check(state: dict) -> list[str] | str:
     """도메인 확인 후 라우팅: 적합 → tech + market 병렬, 부적합 → 재탐색."""
-    if state.get("domain_fit", False):
+    if state.get("current_startup", {}).get("pipeline_flags", {}).get("domain_check_passed", False):
         return ["tech_analysis", "market_policy"]
 
     log = state.get("log", [])
@@ -43,7 +43,7 @@ def route_after_domain_check(state: dict) -> list[str] | str:
 
 def route_after_policy_check(state: dict) -> str:
     """Policy gate 이후: 위반 → END, 정상 → competitor_analysis."""
-    if state.get("policy_violation", False):
+    if state.get("working", {}).get("policy_violation", False):
         print("\n[라우터] 정책 위반으로 평가를 종료합니다.")
         return END
     return "competitor_analysis"
@@ -51,7 +51,7 @@ def route_after_policy_check(state: dict) -> str:
 
 def route_after_evaluation_check(state: dict) -> str:
     """평가 검증 후 라우팅: 통과 → 보고서, 미통과 → 재평가 (최대 1회)."""
-    if not state.get("recheck_required", False):
+    if not state.get("working", {}).get("recheck_required", False):
         return "report_writer"
     log = state.get("log", [])
     recheck_count = sum(1 for entry in log if "재평가 필요" in entry)
@@ -77,6 +77,7 @@ def build_graph(retriever=None):
     # RAG 사용 에이전트에 retriever 바인딩
     tech_node = partial(tech_analysis_node, retriever=retriever)
     market_node = partial(market_policy_node, retriever=retriever)
+    invest_node = partial(investment_decision_node, retriever=retriever)
 
     graph = StateGraph(GraphState)
 
@@ -87,7 +88,7 @@ def build_graph(retriever=None):
     graph.add_node("market_policy", market_node)
     graph.add_node("policy_gate", policy_gate_node)
     graph.add_node("competitor_analysis", competitor_analysis_node)
-    graph.add_node("investment_decision", investment_decision_node)
+    graph.add_node("investment_decision", invest_node)
     graph.add_node("evaluation_check", evaluation_check_node)
     graph.add_node("report_writer", report_writer_node)
 
