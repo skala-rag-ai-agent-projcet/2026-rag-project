@@ -1,0 +1,78 @@
+{
+  "company_name": "플렉셀스페이스",
+  "domain_classification": "태양광",
+  "core_technology": "플렉셀스페이스는 페로브스카이트와 CIGS(구리-인듐-갈륨-셀레늄) 기반의 탠덤 구조 태양전지를 개발하여 우주 환경에서도 안정적인 성능을 발휘합니다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 0,
+      "max_score": 15,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "market_size_growth": {
+      "score": 0,
+      "max_score": 17,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "problem_solving": {
+      "score": 0,
+      "max_score": 10,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "willingness_to_pay": {
+      "score": 0,
+      "max_score": 8,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "tech_differentiation": {
+      "score": 0,
+      "max_score": 14,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "scalability": {
+      "score": 0,
+      "max_score": 10,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "revenue_model": {
+      "score": 0,
+      "max_score": 8,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "risk": {
+      "score": 0,
+      "max_score": 6,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    },
+    "founder_team": {
+      "score": 0,
+      "max_score": 12,
+      "level": "Low",
+      "reason": "파싱 오류",
+      "evidence": "N/A"
+    }
+  },
+  "investment_memo": "평가를 완료할 수 없습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 8
+}

@@ -1,0 +1,114 @@
+{
+  "company_name": "주식회사 솔라라이즈",
+  "domain_classification": "태양광",
+  "core_technology": "솔라라이즈는 고성능 태양광 인버터와 실시간 제어 시스템을 개발하여 태양광 발전의 효율성을 극대화하는 기술을 보유하고 있습니다.",
+  "total_score": 51,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "공식적인 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치가 10억 달러 미만",
+        "시장 성장성에 대한 불확실성"
+      ],
+      "reason": "목표 시장의 규모가 제한적이며 성장성에 대한 불확실성이 존재함",
+      "evidence": "한국 시장 규모 약 10억 달러로 추정"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안이 존재하여 경쟁력 약화"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않으며 대안이 존재함",
+      "evidence": "기존 태양광 인버터 시장의 경쟁사 존재"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "지불 의사 검증이 부족함",
+        "ROI 수치가 명확하지 않음"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "구체적인 유료 계약 사례 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 다소 미흡",
+        "경쟁사 대비 차별성이 제한적"
+      ],
+      "reason": "기술이 상용화 단계에 가까우나 경쟁사 대비 차별성이 부족함",
+      "evidence": "TRL 6, KS 인증 추진 중"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 불확실성",
+        "특정 고객/지역 의존도가 높음"
+      ],
+      "reason": "사업의 확장성이 제한적이며 특정 시장에 의존하고 있음",
+      "evidence": "현재 공공 및 산업용 시장에 집중"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "반복매출 구조가 아직 검증되지 않음",
+        "실매출 발생이 미비함"
+      ],
+      "reason": "수익 모델이 명확하나 검증되지 않음",
+      "evidence": "파일럿 단계에 머물러 있음"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "인허가 진행 중으로 리스크 존재",
+        "규제 변화에 따른 불확실성"
+      ],
+      "reason": "규제 및 인허가 리스크가 존재하나 관리 가능함",
+      "evidence": "KS 인증 추진 중"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 부족한 팀원 존재",
+        "핵심 인력의 몰입도 불확실"
+      ],
+      "reason": "팀의 경험이 부족하여 성공 가능성에 의문이 있음",
+      "evidence": "창업자 및 팀의 경력 정보 부족"
+    }
+  },
+  "investment_memo": "주식회사 솔라라이즈는 태양광 인버터 시장에서 기술적 가능성을 보유하고 있으나, 시장 규모와 성장성, 고객의 지불 의사, 기술 차별성 등에서 여러 약점을 가지고 있습니다. 특히, SK 그룹과의 시너지 가능성이 낮고, 수익 모델이 검증되지 않은 점이 우려됩니다. 따라서 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 8
+}

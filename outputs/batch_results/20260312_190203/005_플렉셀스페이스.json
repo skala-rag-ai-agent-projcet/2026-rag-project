@@ -1,0 +1,14 @@
+{
+  "batch_id": 5,
+  "company_name": "플렉셀스페이스",
+  "domain_classification": "",
+  "core_technology": "",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null
+}

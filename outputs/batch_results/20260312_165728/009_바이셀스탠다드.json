@@ -1,0 +1,15 @@
+{
+  "batch_id": 9,
+  "company_name": "바이셀스탠다드",
+  "domain_classification": "토큰증권(STO) 기반 디지털자산 운용 플랫폼으로, 블록체인 기술을 활용한 금융 서비스 제공.",
+  "core_technology": "토큰증권(STO) 기반 디지털자산 운용 플랫폼으로, 블록체인 기술을 활용한 금융 서비스 제공.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 토큰증권(STO) 기반 디지털자산 운용 플랫폼으로, 블록체인 기술을 활용한 금융 서비스 제공.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

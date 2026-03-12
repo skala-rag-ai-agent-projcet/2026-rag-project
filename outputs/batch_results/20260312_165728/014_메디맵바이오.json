@@ -1,0 +1,15 @@
+{
+  "batch_id": 14,
+  "company_name": "메디맵바이오",
+  "domain_classification": "면역치료제 개발에 집중하는 바이오 스타트업으로, 혁신적인 치료법을 연구.",
+  "core_technology": "면역치료제 개발에 집중하는 바이오 스타트업으로, 혁신적인 치료법을 연구.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 면역치료제 개발에 집중하는 바이오 스타트업으로, 혁신적인 치료법을 연구.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

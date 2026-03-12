@@ -1,0 +1,15 @@
+{
+  "batch_id": 8,
+  "company_name": "닥터트루",
+  "domain_classification": "설탕 대체 저칼로리 감미료 브랜드로, 건강한 식습관을 지원하는 제품을 개발.",
+  "core_technology": "설탕 대체 저칼로리 감미료 브랜드로, 건강한 식습관을 지원하는 제품을 개발.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 설탕 대체 저칼로리 감미료 브랜드로, 건강한 식습관을 지원하는 제품을 개발.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

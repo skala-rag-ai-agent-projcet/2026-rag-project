@@ -14,16 +14,59 @@ from agents.batch_evaluation_check import batch_evaluation_check_node
 
 # ── Fan-in node ──────────────────────────────────────────────────────
 def _batch_fan_in_node(state: dict) -> dict:
-    """Fan-in: tech_analysis + market_policy 완료 후 상태 로그."""
-    violation = state.get("policy_violation", False)
-    name = state.get("startup_profile", {}).get("company_name", "Unknown")
+    """Fan-in: tech_analysis + market_policy 완료 후 pipeline_flags 확인 + 상태 검증."""
+    cs = state.get("current_startup", {})
+    flags = cs.get("pipeline_flags", {})
+    name = cs.get("company_profile", {}).get("company_name", "Unknown")
+    violation = state.get("working", {}).get("policy_violation", False)
+
+    tech_done = flags.get("technology_done", False)
+    market_done = flags.get("market_policy_done", False)
+
+    if not tech_done:
+        print(f"\n[Batch Fan-in] ⚠️ {name}: 기술 분석 미완료")
+    if not market_done:
+        print(f"\n[Batch Fan-in] ⚠️ {name}: 시장/정책 분석 미완료")
 
     if violation:
         print(f"\n[Batch Fan-in] ⚠️ {name}: 정책 위반 감지")
     else:
         print(f"\n[Batch Fan-in] ✓ {name}: 분석 결과 수집 완료")
 
-    return {"log": [f"Batch fan-in: violation={violation}"]}
+    return {"log": [f"Batch fan-in: violation={violation}, tech={tech_done}, market={market_done}"]}
+
+
+# ── Aggregation node ─────────────────────────────────────────────────
+def batch_aggregation_node(state: dict) -> dict:
+    """current_startup → outputs.aggregation_result canonical 변환."""
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
+    inv = cs.get("investment_decision", {})
+    comp = cs.get("competition_analysis", {})
+
+    canonical = {
+        "company_name": profile.get("company_name", "Unknown"),
+        "domain_classification": profile.get("domain_classification", ""),
+        "core_technology": profile.get("core_technology", ""),
+        "total_score": int(inv.get("weighted_score", 0)),
+        "verdict": inv.get("verdict", "reject"),
+        "criteria_scores": inv.get("criteria_scores", {}),
+        "investment_memo": inv.get("investment_memo", ""),
+        "policy_violation": state.get("working", {}).get("policy_violation", False),
+        "policy_violation_reason": state.get("working", {}).get("policy_violation_reason", ""),
+        "competitor_analyzed": comp.get("analyzed", False) if isinstance(comp, dict) else False,
+        "competitiveness_score": comp.get("competitiveness_score") if isinstance(comp, dict) else None,
+    }
+
+    name = profile.get("company_name", "Unknown")
+    print(f"\n[배치 집계] {name}: canonical 결과 생성 완료")
+
+    return {
+        "outputs": {
+            "aggregation_result": canonical,
+        },
+        "log": [f"배치 집계 완료: {name}"],
+    }
 
 
 # ── Routing functions ────────────────────────────────────────────────
@@ -33,7 +76,7 @@ def route_after_input_validation(state: dict) -> str:
     통과 → batch_investment_decision
     실패 → batch_competitor 재시도 (max 1회, 이후 강제 진행)
     """
-    if state.get("input_validation_passed", False):
+    if state.get("working", {}).get("input_validation_passed", False):
         return "batch_investment_decision"
 
     log = state.get("log", [])
@@ -50,18 +93,18 @@ def route_after_input_validation(state: dict) -> str:
 def route_after_batch_eval(state: dict) -> str:
     """평가 검증 후 라우팅.
 
-    통과 → END
-    실패 → batch_investment_decision 재시도 (max 1회, 이후 종료)
+    통과 → batch_aggregation
+    실패 → batch_investment_decision 재시도 (max 1회, 이후 집계)
     """
-    if not state.get("recheck_required", False):
-        return END
+    if not state.get("working", {}).get("recheck_required", False):
+        return "batch_aggregation"
 
     log = state.get("log", [])
     fail_count = sum(1 for e in log if "evaluation_check 실패" in e)
 
     if fail_count >= 2:
-        print("\n[라우터] 평가 검증 2회 실패. 평가를 종료합니다.")
-        return END
+        print("\n[라우터] 평가 검증 2회 실패. 집계로 진행합니다.")
+        return "batch_aggregation"
 
     print("\n[라우터] 평가 검증 실패. 투자 판단을 재시도합니다.")
     return "batch_investment_decision"
@@ -79,10 +122,11 @@ def build_batch_graph(retriever=None):
               → pass → batch_investment_decision
                 → batch_evaluation_check
                   → fail → batch_investment_decision (재시도, max 1)
-                  → pass → END
+                  → pass → batch_aggregation → END
     """
     tech_node = partial(tech_analysis_node, retriever=retriever)
     market_node = partial(market_policy_node, retriever=retriever)
+    invest_node = partial(batch_investment_decision_node, retriever=retriever)
 
     graph = StateGraph(GraphState)
 
@@ -93,8 +137,9 @@ def build_batch_graph(retriever=None):
     graph.add_node("batch_fan_in", _batch_fan_in_node)
     graph.add_node("batch_competitor", batch_competitor_node)
     graph.add_node("batch_input_validation", batch_input_validation_node)
-    graph.add_node("batch_investment_decision", batch_investment_decision_node)
+    graph.add_node("batch_investment_decision", invest_node)
     graph.add_node("batch_evaluation_check", batch_evaluation_check_node)
+    graph.add_node("batch_aggregation", batch_aggregation_node)
 
     # START → startup_search
     graph.add_edge(START, "startup_search")
@@ -132,8 +177,11 @@ def build_batch_graph(retriever=None):
         route_after_batch_eval,
         {
             "batch_investment_decision": "batch_investment_decision",
-            END: END,
+            "batch_aggregation": "batch_aggregation",
         },
     )
+
+    # batch_aggregation → END
+    graph.add_edge("batch_aggregation", END)
 
     return graph.compile()

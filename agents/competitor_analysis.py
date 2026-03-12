@@ -6,16 +6,17 @@ from config import LLM_MODEL
 
 
 def competitor_analysis_node(state: dict) -> dict:
-    """경쟁사 맵, 대체기술, 진입장벽 분석 (tech+market 결과 기반 + 웹검색)."""
-    profile = state.get("startup_profile", {})
+    """경쟁사 맵, 대체기술, 진입장벽 분석 (tech+market 결과 기반, 웹검색 없이)."""
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
     name = profile.get("company_name", "Unknown")
     core_tech = profile.get("core_technology", "")
 
     print(f"\n[경쟁사 분석] {name} 경쟁 환경 분석 중...")
 
-    # tech_analysis, market_policy_analysis를 프롬프트에 직접 전달
-    tech = state.get("tech_analysis", {})
-    market = state.get("market_policy_analysis", {})
+    # technology_analysis, market_policy_analysis를 프롬프트에 직접 전달
+    tech = cs.get("technology_analysis", {})
+    market = cs.get("market_policy_analysis", {})
 
     tech_str = (
         json.dumps(tech, ensure_ascii=False, indent=2)
@@ -28,10 +29,14 @@ def competitor_analysis_node(state: dict) -> dict:
         else str(market)
     )
 
-    # 웹 검색
+    # 경쟁사 비교 웹 검색
     search_results = web_search(
-        f"{name} competitors {core_tech} energy startups comparison market share",
-        max_results=7,
+        f"{name} 경쟁사 비교 시장점유율", max_results=5
+    )
+
+    # 부정적/리스크 검색
+    negative_search_results = web_search(
+        f"{name} 경쟁 열위 대체기술 점유율하락", max_results=5
     )
 
     llm = ChatOpenAI(model=LLM_MODEL, temperature=0)
@@ -41,6 +46,7 @@ def competitor_analysis_node(state: dict) -> dict:
         tech_analysis=tech_str,
         market_policy_analysis=market_str,
         search_results=search_results,
+        negative_search_results=negative_search_results,
     )
 
     response = llm.invoke(prompt)
@@ -67,8 +73,10 @@ def competitor_analysis_node(state: dict) -> dict:
     print(f"[경쟁사 분석] {name} 완료 (경쟁력 점수: {competitiveness_score}/10)")
 
     return {
-        "competitor_analysis": analysis,
-        "competitiveness_score": competitiveness_score,
-        "sources": [f"경쟁사 분석 웹검색: {name}"],
+        "current_startup": {
+            "competition_analysis": analysis,
+            "pipeline_flags": {"competition_done": True},
+        },
+        "sources": [f"경쟁사 분석: {name}"],
         "log": [f"경쟁사 분석 완료: {name} (경쟁력 {competitiveness_score}/10)"],
     }

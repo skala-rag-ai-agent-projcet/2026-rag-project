@@ -1,0 +1,114 @@
+{
+  "company_name": "플렉셀스페이스",
+  "domain_classification": "태양광",
+  "core_technology": "플렉셀스페이스는 페로브스카이트와 CIGS(구리-인듐-갈륨-셀레늄) 기반의 탠덤 구조 태양전지를 개발하여 우주 환경에서도 안정적인 성능을 발휘합니다.",
+  "total_score": 53,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "현재 SK와의 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "국내 시장 규모가 상대적으로 작음"
+      ],
+      "reason": "우주용 태양전지 시장의 성장 가능성은 있으나, 규모가 제한적임",
+      "evidence": "국내 시장 규모 약 1,500억 원"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "기술적 한계로 인한 내구성 검증 필요",
+        "기존 대안의 존재"
+      ],
+      "reason": "고객의 명확한 pain point는 존재하나, 기술적 한계가 있음",
+      "evidence": "우주 환경에서의 내구성 검증 필요"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치 미제공"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "지불 의사에 대한 구체적인 데이터 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 다소 미흡",
+        "장기 내구성 검증 필요"
+      ],
+      "reason": "기술적 차별성은 있으나 상용화에 대한 검증이 필요함",
+      "evidence": "TRL 6 수준으로 상용화에 다소 미흡"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "특정 고객 및 지역 의존",
+        "글로벌 확장성에 대한 불확실성"
+      ],
+      "reason": "사업의 확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 고객군에 의존하고 있음"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "파일럿 단계로 수익 구조 미검증",
+        "반복 매출 구조의 불확실성"
+      ],
+      "reason": "수익 모델이 명확하나 검증이 필요함",
+      "evidence": "현재 파일럿 단계로 수익 발생 미시작"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "우주 환경에서의 규제 리스크",
+        "생산 공정의 안정성 확보 필요"
+      ],
+      "reason": "규제 및 운영 리스크가 존재하나 관리 가능함",
+      "evidence": "우주 환경에서의 안전성 규제 존재"
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 상대적으로 짧음",
+        "핵심 인력의 추가 확보 필요"
+      ],
+      "reason": "창업자의 경험은 있으나 팀 보강이 필요함",
+      "evidence": "산업 경험이 10년 이상이 아님"
+    }
+  },
+  "investment_memo": "플렉셀스페이스는 우주용 태양전지 시장에서 기술적 차별성을 가지고 있으나, 상용화에 대한 검증이 부족하고, 고객의 지불 의사 및 시장 규모에 대한 불확실성이 존재합니다. 또한, SK와의 시너지 가능성이 낮아 현재로서는 투자가 적절하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 8,
+  "batch_id": 5
+}

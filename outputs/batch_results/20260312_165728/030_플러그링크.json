@@ -1,0 +1,69 @@
+{
+  "batch_id": 30,
+  "company_name": "플러그링크",
+  "domain_classification": "전기차 충전",
+  "core_technology": "플러그링크는 블루투스 기반의 PnC(Plug and Charge) 충전 서비스와 스마트 차징 전력 관리 기술을 활용하여 전기차 충전 경험을 혁신하고 있습니다.",
+  "total_score": 84,
+  "verdict": "invest",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 12,
+      "max_score": 15,
+      "reason": "플러그링크의 PnC 충전 서비스는 SK그룹의 배터리 및 에너지솔루션 사업과 시너지를 낼 수 있는 가능성이 높음.",
+      "evidence": "SK온의 배터리 기술과 플러그링크의 충전 인프라가 결합하면 전기차 충전 생태계에서 경쟁력을 강화할 수 있음."
+    },
+    "market_size_growth": {
+      "score": 15,
+      "max_score": 17,
+      "reason": "전기차 충전기 시장의 TAM이 1,500억 달러로 예상되며, 국내 시장도 1조 원 규모로 성장 가능성이 큼.",
+      "evidence": "CAGR 20%로 성장하고 있으며, 플러그링크는 현재 20%의 시장 점유율을 보유하고 있음."
+    },
+    "problem_solving": {
+      "score": 9,
+      "max_score": 10,
+      "reason": "전기차 충전의 사용자 인증 절차를 간소화하여 고객의 불편함을 해결하고 있음.",
+      "evidence": "PnC 기술을 통해 충전 경험을 혁신하고 있으며, 고객의 편리함을 중시함."
+    },
+    "willingness_to_pay": {
+      "score": 7,
+      "max_score": 8,
+      "reason": "고객들은 전기차 충전의 편리함과 안전성을 중시하며, 지불 의사가 높음.",
+      "evidence": "앱 기반의 간편한 결제 시스템과 안전한 충전 환경에 대한 수요가 큼."
+    },
+    "tech_differentiation": {
+      "score": 12,
+      "max_score": 14,
+      "reason": "블루투스 기반의 PnC 충전 서비스는 기술적 차별성이 있으며, 특허를 보유하고 있음.",
+      "evidence": "TRL 7로 상용화 단계에 있으며, 기술 신뢰성이 높음."
+    },
+    "scalability": {
+      "score": 8,
+      "max_score": 10,
+      "reason": "전국적으로 충전소를 확장할 수 있는 가능성이 높고, 다양한 고객군을 타겟으로 하고 있음.",
+      "evidence": "3만5219기의 충전기를 운영하며, 추가적인 지역 확장이 가능함."
+    },
+    "revenue_model": {
+      "score": 7,
+      "max_score": 8,
+      "reason": "충전기 설치 및 운영 수수료, 앱 기반 서비스 이용료 등으로 반복 매출 가능성이 높음.",
+      "evidence": "매출 구조가 명확하고, 데이터 기반의 부가 서비스 제공이 가능함."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "reason": "기술적 한계와 대규모 인프라 구축 시 비용 문제가 존재함.",
+      "evidence": "블루투스 통신의 신뢰성 문제와 충전기와 차량 간의 호환성 문제가 있음."
+    },
+    "founder_team": {
+      "score": 10,
+      "max_score": 12,
+      "reason": "CEO 강인철은 산업 전문성을 갖추고 있으며, 팀의 실행력이 높음.",
+      "evidence": "기술 고도화와 서비스 품질 개선에 집중하고 있음."
+    }
+  },
+  "investment_memo": "플러그링크는 전기차 충전 시장에서 혁신적인 PnC 충전 서비스를 제공하며, SK그룹의 배터리 및 에너지솔루션 사업과의 시너지가 기대됩니다. 시장 규모와 성장성이 높고, 고객의 지불 의사도 강합니다. 그러나 기술적 한계와 대규모 인프라 구축 시 비용 문제가 존재하므로, 이를 해결하기 위한 전략이 필요합니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7
+}

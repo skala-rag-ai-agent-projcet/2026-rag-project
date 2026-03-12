@@ -7,7 +7,7 @@ from config import LLM_MODEL
 
 def startup_search_node(state: dict) -> dict:
     """사용자 입력 스타트업명으로 기업 프로필 수집."""
-    startup_name = state["question"]
+    startup_name = state.get("current_startup", {}).get("metadata", {}).get("question", "")
 
     print(f"\n[스타트업 소싱] {startup_name} 검색 중...")
 
@@ -15,10 +15,16 @@ def startup_search_node(state: dict) -> dict:
         f"{startup_name} 스타트업 기업정보 기술 투자 에너지", max_results=10
     )
 
+    # 부정적/리스크 검색
+    negative_search_results = web_search(
+        f"{startup_name} 리스크 한계 실패 적자 논란", max_results=5
+    )
+
     llm = ChatOpenAI(model=LLM_MODEL, temperature=0)
     prompt = STARTUP_SEARCH_PROMPT.format(
         startup_name=startup_name,
         search_results=search_results,
+        negative_search_results=negative_search_results,
     )
 
     response = llm.invoke(prompt)
@@ -41,7 +47,9 @@ def startup_search_node(state: dict) -> dict:
     print(f"[스타트업 소싱] {profile.get('company_name', startup_name)} 프로필 수집 완료")
 
     return {
-        "startup_profile": profile,
+        "current_startup": {
+            "company_profile": profile,
+        },
         "sources": [f"Tavily 검색: {startup_name}"],
         "log": [f"스타트업 소싱 완료: {profile.get('company_name', startup_name)}"],
     }

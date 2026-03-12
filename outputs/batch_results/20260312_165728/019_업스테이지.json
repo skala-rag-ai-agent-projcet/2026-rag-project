@@ -1,0 +1,15 @@
+{
+  "batch_id": 19,
+  "company_name": "업스테이지",
+  "domain_classification": "AI 기반의 데이터 분석 및 처리 솔루션을 제공하는 스타트업으로, 기업의 데이터 활용을 극대화한다.",
+  "core_technology": "AI 기반의 데이터 분석 및 처리 솔루션을 제공하는 스타트업으로, 기업의 데이터 활용을 극대화한다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 기반의 데이터 분석 및 처리 솔루션을 제공하는 스타트업으로, 기업의 데이터 활용을 극대화한다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

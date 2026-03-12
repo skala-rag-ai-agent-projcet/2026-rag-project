@@ -1,0 +1,114 @@
+{
+  "company_name": "시리에너지",
+  "domain_classification": "배터리",
+  "core_technology": "차세대 실리콘 복합 음극재를 개발하며, 리튬 금속 전극을 초박판 및 구조화된 형태로 제작하는 기술을 보유하고 있습니다. 이 기술은 리튬 덴드라이트와 대면적화 문제를 해결하여 고에너지밀도와 긴 수명을 제공합니다.",
+  "total_score": 52,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "시리에너지는 SK와의 공식적인 협력 관계가 없음."
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치의 불확실성",
+        "경쟁사와의 차별화된 성장 전략 부족"
+      ],
+      "reason": "시장 규모는 크지만 성장 전망이 불확실함",
+      "evidence": "TAM/SAM 수치가 명확하지 않음."
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안의 존재로 인한 경쟁력 약화"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않음",
+      "evidence": "기존 배터리 기술과의 비교에서 차별성이 부족함."
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "유료 계약 사례 부족",
+        "ROI 수치의 불명확성"
+      ],
+      "reason": "고객의 지불 의사가 검증되지 않음",
+      "evidence": "유료 PoC 사례가 없음."
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 5로 상용화에 미흡",
+        "대량 생산 시 원가 문제"
+      ],
+      "reason": "기술 차별성이 있으나 상용화에 미흡함",
+      "evidence": "TRL 5 단계로 상용화가 진행 중."
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 불확실성",
+        "특정 고객 의존도"
+      ],
+      "reason": "확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 고객군에 의존하고 있음."
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조의 불확실성",
+        "파일럿 단계에서의 매출 미발생"
+      ],
+      "reason": "수익 모델이 명확하지 않음",
+      "evidence": "파일럿 단계로 매출이 발생하지 않음."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성",
+        "공급망 안정성 문제"
+      ],
+      "reason": "운영 리스크가 존재함",
+      "evidence": "규제 준수에 대한 불확실성이 있음."
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험 부족",
+        "핵심 인력의 미확보"
+      ],
+      "reason": "팀의 역량이 부족함",
+      "evidence": "산업 경험이 부족한 인력이 다수 포함되어 있음."
+    }
+  },
+  "investment_memo": "시리에너지는 차세대 배터리 음극 솔루션을 개발하는 스타트업으로, 기술적 차별성이 있으나 상용화에 미흡하고, 시장에서의 경쟁력이 불확실합니다. 고객의 지불 의사와 수익 모델이 명확하지 않으며, SK 그룹과의 시너지 가능성도 낮습니다. 따라서 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 6
+}

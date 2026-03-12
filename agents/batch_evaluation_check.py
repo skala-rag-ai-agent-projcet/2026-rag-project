@@ -8,13 +8,16 @@ def batch_evaluation_check_node(state: dict) -> dict:
       1. 9개 항목 모두 존재
       2. 0 <= score <= max_score
       3. total == sum(scores)
-      4. verdict ∈ {invest, reject}
+      4. verdict in {invest, reject}
     """
-    profile = state.get("startup_profile", {})
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
     name = profile.get("company_name", "Unknown")
-    criteria_scores = state.get("criteria_scores", {})
-    weighted_score = state.get("weighted_score", 0.0)
-    verdict = state.get("verdict", "")
+
+    inv = cs.get("investment_decision", {})
+    criteria_scores = inv.get("criteria_scores", {})
+    weighted_score = inv.get("weighted_score", 0.0)
+    verdict = inv.get("verdict", "")
 
     print(f"\n[배치 평가검증] {name} 투자 판단 검증 중...")
 
@@ -47,7 +50,7 @@ def batch_evaluation_check_node(state: dict) -> dict:
     if abs(weighted_score - expected_total) > 1:
         errors.append(f"총점 불일치: weighted_score={weighted_score}, 합산={expected_total}")
 
-    # 4. verdict ∈ {invest, reject}
+    # 4. verdict in {invest, reject}
     if verdict not in ("invest", "reject"):
         errors.append(f"verdict 부적절: '{verdict}' (invest/reject만 허용)")
 
@@ -61,8 +64,10 @@ def batch_evaluation_check_node(state: dict) -> dict:
             print(f"  - {e}")
 
     return {
-        "recheck_required": recheck,
-        "validation_errors": errors,
+        "working": {
+            "recheck_required": recheck,
+            "validation_errors": errors,
+        },
         "log": [
             f"evaluation_check {'통과' if not recheck else '실패'}: {name}"
             + (f" ({', '.join(errors)})" if errors else "")

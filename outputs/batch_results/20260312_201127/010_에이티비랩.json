@@ -1,0 +1,114 @@
+{
+  "company_name": "에이티비랩",
+  "domain_classification": "배터리",
+  "core_technology": "에이티비랩은 실시간 배터리 진단 및 운영 솔루션을 제공하며, 셀 단위의 정밀 진단과 수명 예측 기술을 보유하고 있습니다.",
+  "total_score": 51,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 계약이 없음",
+        "기술 내재화에 대한 구체적인 계획 부족"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "공식 파트너십이나 계약이 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치가 구체적이지 않음",
+        "성장성에 대한 불확실성 존재"
+      ],
+      "reason": "시장 규모는 크지만 성장성에 대한 불확실성이 존재함",
+      "evidence": "TAM/SAM 수치가 구체적이지 않음"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하나 대안이 존재함",
+        "기술적 개선 폭이 제한적일 수 있음"
+      ],
+      "reason": "고객의 pain point는 존재하나 기존 대안이 있음",
+      "evidence": "기술적 개선 폭이 제한적일 수 있음"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적인 사례 부족",
+        "ROI 수치가 검증되지 않음"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "고객의 지불 의사에 대한 구체적인 사례 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "기술의 확장성 및 내구성에 대한 데이터 부족",
+        "경쟁 심화로 인한 기술 초격차 유지 필요"
+      ],
+      "reason": "기술은 차별적이나 추가 검증이 필요함",
+      "evidence": "기술의 확장성 및 내구성에 대한 데이터 부족"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적인 전략 부족",
+        "특정 산업에 의존할 가능성 존재"
+      ],
+      "reason": "일부 지역/산업 확장 가능하나 제약이 존재함",
+      "evidence": "글로벌 확장 가능성에 대한 구체적인 전략 부족"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 초기 단계에 있음",
+        "반복 매출 모델의 검증이 필요"
+      ],
+      "reason": "수익 구조가 명확하지 않음",
+      "evidence": "수익 구조가 초기 단계에 있음"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성 존재",
+        "공급망의 안정성에 대한 우려"
+      ],
+      "reason": "규제 및 운영 리스크가 존재함",
+      "evidence": "규제 준수에 대한 불확실성 존재"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "창업자의 산업 경험이 제한적일 수 있음",
+        "핵심 인력의 확보가 불확실함"
+      ],
+      "reason": "팀의 역량이 일부 부족함",
+      "evidence": "창업자의 산업 경험이 제한적일 수 있음"
+    }
+  },
+  "investment_memo": "에이티비랩은 배터리 진단 및 운영 솔루션을 제공하는 유망한 스타트업이지만, SK와의 시너지 부족, 시장 성장성에 대한 불확실성, 기술 차별성의 검증 필요 등 여러 리스크가 존재합니다. 초기 손실 구조와 기술 확장성에 대한 우려로 인해 현재로서는 투자를 보류하는 것이 바람직합니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 10
+}

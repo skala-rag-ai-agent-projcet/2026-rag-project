@@ -1,0 +1,114 @@
+{
+  "company_name": "터빈크루",
+  "domain_classification": "풍력, 재생에너지",
+  "core_technology": "AI를 활용한 스마트 시스템과 인공지능 기반의 전기 발생 기술을 보유하고 있으며, 재생 에너지 저장 시스템(ESS)을 제공합니다.",
+  "total_score": 50,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "구체적 파트너십이나 협력 사례 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁이 치열한 시장 환경"
+      ],
+      "reason": "시장 규모는 크지만 성장성에 대한 불확실성이 존재함",
+      "evidence": "TAM/SAM 수치가 명확하지 않음"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안이 존재함"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않음",
+      "evidence": "기존 대안이 존재하여 경쟁력이 떨어질 수 있음"
+    },
+    "willingness_to_pay": {
+      "score": 3,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "지불 의사 검증이 부족함",
+        "ROI 수치 미제공"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "유료 PoC 사례가 없음"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 미흡",
+        "경쟁사 대비 차별성이 불명확"
+      ],
+      "reason": "기술이 상용화에 가까우나 경쟁사 대비 차별성이 부족함",
+      "evidence": "TRL 6으로 상용화 단계에 미흡"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 불확실성",
+        "특정 산업에 의존하는 구조"
+      ],
+      "reason": "일부 지역/산업 확장이 가능하나 제약이 존재함",
+      "evidence": "특정 고객군에 의존하는 구조"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 초기 단계에 있음",
+        "반복 매출 모델 검증 부족"
+      ],
+      "reason": "수익 모델이 명확하나 검증이 필요함",
+      "evidence": "파일럿 단계에서 수익 발생 미비"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 리스크가 존재할 수 있음",
+        "안전성 문제에 대한 우려"
+      ],
+      "reason": "규제 및 안전성 문제로 인해 리스크가 존재함",
+      "evidence": "ESS와의 통합 운영에서의 안전성 문제 우려"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 부족함",
+        "핵심 인력의 전문성 미비"
+      ],
+      "reason": "창업자와 팀의 경험이 부족하여 성공 가능성에 의문",
+      "evidence": "산업 경험이 10년 미만"
+    }
+  },
+  "investment_memo": "터빈크루는 AI 기반의 재생 에너지 솔루션을 제공하는 스타트업으로, 기술적 차별성과 시장 성장 가능성이 있으나, 고객의 지불 의사와 문제 해결력이 불명확하여 투자 리스크가 큽니다. 또한, 창업팀의 경험 부족과 규제 리스크가 상존하여 상용화에 어려움이 예상됩니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 7
+}

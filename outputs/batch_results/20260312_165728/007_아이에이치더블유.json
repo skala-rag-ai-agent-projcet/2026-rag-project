@@ -1,0 +1,15 @@
+{
+  "batch_id": 7,
+  "company_name": "아이에이치더블유",
+  "domain_classification": "아날로그 AI 반도체 기술을 개발하는 스타트업으로, 시리즈 A 투자를 유치했습니다.",
+  "core_technology": "아날로그 AI 반도체 기술을 개발하는 스타트업으로, 시리즈 A 투자를 유치했습니다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 아날로그 AI 반도체 기술을 개발하는 스타트업으로, 시리즈 A 투자를 유치했습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

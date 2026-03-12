@@ -1,0 +1,114 @@
+{
+  "company_name": "터빈크루",
+  "domain_classification": "태양광, 풍력, AI 에너지",
+  "core_technology": "인공지능(AI)과 빅데이터를 활용하여 풍력 및 태양광 발전 시스템을 최적화하는 기술을 보유하고 있습니다. 스마트폴 시스템을 통해 태양의 위치를 추적하고 패널 각도를 조절하여 최대의 에너지를 생산합니다.",
+  "total_score": 51,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "구체적 파트너십이나 협력 사례 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁이 치열하여 시장 점유율 확보에 어려움"
+      ],
+      "reason": "재생에너지 시장의 성장 가능성은 있으나 불확실성이 존재함",
+      "evidence": "TAM/SAM 수치가 명확하지 않음"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하나 대안이 존재",
+        "기술적 한계로 인한 초기 투자 비용 부담"
+      ],
+      "reason": "고객의 문제를 해결할 수 있는 기술이나 솔루션이 있으나 대안이 존재함",
+      "evidence": "기술적 한계로 초기 투자 비용이 높음"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증이 부족",
+        "ROI 수치의 구체적 데이터 부족"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "ROI 수치에 대한 구체적 데이터 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 다소 미흡",
+        "경쟁사와의 기술적 차별성이 명확하지 않음"
+      ],
+      "reason": "기술이 TRL 6 수준으로 상용화에 다소 미흡함",
+      "evidence": "경쟁사와의 기술적 차별성이 불명확함"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적 계획 부족",
+        "특정 지역 의존도가 높음"
+      ],
+      "reason": "확장 가능성은 있으나 구체적 계획이 부족함",
+      "evidence": "특정 지역에 의존하고 있음"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "수익 구조가 초기 단계로 검증되지 않음",
+        "반복 매출 구조의 불확실성"
+      ],
+      "reason": "수익 모델이 초기 단계로 검증되지 않음",
+      "evidence": "매출 발생이 미비함"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "인허가 절차의 복잡성",
+        "환경 규제 준수에 대한 리스크"
+      ],
+      "reason": "규제 리스크가 존재하나 관리 가능한 수준",
+      "evidence": "인허가 절차가 복잡함"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 상대적으로 짧음",
+        "핵심 인력의 전문성 부족"
+      ],
+      "reason": "창업자와 팀의 경험이 부족함",
+      "evidence": "산업 경험이 10년 이상이 아님"
+    }
+  },
+  "investment_memo": "터빈크루는 AI와 빅데이터를 활용한 재생에너지 솔루션을 제공하는 유망한 스타트업이지만, SK와의 직접적인 시너지 부족, 시장 점유율 확보의 어려움, 초기 투자 비용 부담 등 여러 리스크가 존재합니다. 기술 상용화 수준이 TRL 6으로 다소 미흡하며, 수익 모델이 검증되지 않은 점도 우려됩니다. 따라서 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 3
+}

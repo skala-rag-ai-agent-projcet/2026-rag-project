@@ -1,0 +1,114 @@
+{
+  "company_name": "스탠다드에너지",
+  "domain_classification": "배터리, ESS",
+  "core_technology": "스탠다드에너지는 바나듐 이온 배터리 기술을 기반으로 하여, 고출력과 안정성을 갖춘 에너지 저장 솔루션을 제공합니다.",
+  "total_score": 66,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 7,
+      "max_score": 15,
+      "level": "Medium",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK의 에너지 밸류체인과 간접적 연결성 존재",
+      "evidence": "ESS 시장에서의 기술적 우수성"
+    },
+    "market_size_growth": {
+      "score": 14,
+      "max_score": 17,
+      "level": "High",
+      "weakness": [
+        "TAM/SAM 수치의 불확실성",
+        "경쟁사 대비 시장 점유율 확보의 어려움"
+      ],
+      "reason": "ESS 시장의 성장 가능성이 높음",
+      "evidence": "2023년 약 9조 원에서 40조 원으로 성장 예상"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하나 대안 존재",
+        "기술적 우수성에 대한 인식 부족"
+      ],
+      "reason": "안전성과 효율성을 중시하는 고객의 수요 존재",
+      "evidence": "바나듐 이온 배터리의 안전성 및 효율성"
+    },
+    "willingness_to_pay": {
+      "score": 5,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치의 명확한 제시 부족"
+      ],
+      "reason": "고객들이 안전성과 효율성을 중시함",
+      "evidence": "프리미엄 지불 의사 존재"
+    },
+    "tech_differentiation": {
+      "score": 12,
+      "max_score": 14,
+      "level": "High",
+      "weakness": [
+        "소형화의 어려움으로 전기차 시장에서의 경쟁력 부족",
+        "원자재 수급의 불안정성"
+      ],
+      "reason": "TRL 7+, 안전성과 효율성에서 경쟁 우위",
+      "evidence": "96% 이상의 에너지 효율과 화재 위험 없음"
+    },
+    "scalability": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "특정 고객/지역 의존",
+        "글로벌 확장성에 대한 불확실성"
+      ],
+      "reason": "일부 산업 확장 가능성 존재",
+      "evidence": "데이터센터 및 전기차 충전소 시장에서의 수요 증가"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "초기 매출이 낮고 수익성 미검증",
+        "반복매출 구조의 불확실성"
+      ],
+      "reason": "배터리 판매와 ESS 설치 및 유지보수 서비스로 수익 창출 가능",
+      "evidence": "매출 발생 초기 단계"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 리스크가 존재할 수 있음",
+        "원자재 가격 변동성에 대한 리스크"
+      ],
+      "reason": "규제 샌드박스를 통해 안전성 검증 중",
+      "evidence": "인허가 과정에서 큰 리스크 없음"
+    },
+    "founder_team": {
+      "score": 8,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 상대적으로 짧음",
+        "핵심 인력의 추가 보강 필요"
+      ],
+      "reason": "KAIST와 MIT 출신 연구진으로 구성",
+      "evidence": "기술적 전문성 보유"
+    }
+  },
+  "investment_memo": "스탠다드에너지는 바나듐 이온 배터리 기술을 통해 ESS 시장에서 독특한 경쟁력을 갖추고 있으며, 안전성과 효율성을 중시하는 고객의 수요를 충족할 수 있습니다. 시장 성장 가능성과 정책적 지원이 긍정적인 요소로 작용하고 있지만, 초기 매출과 손실 문제는 해결해야 할 과제입니다. SK 그룹과의 시너지를 통해 기술 내재화 및 시장 확장을 도모할 수 있는 기회가 있습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 9
+}

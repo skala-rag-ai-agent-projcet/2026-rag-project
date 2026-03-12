@@ -1,0 +1,77 @@
+[
+    {
+        "question": "2025년 기준 글로벌 리튬이온 배터리 시장 규모는 얼마인가?",
+        "ground_truth": "IEA 코멘터리에 따르면 2025년 글로벌 리튬이온 배터리 시장은 1,500억 달러를 넘어섰고, 배터리 deployment는 2020년 대비 6배 수준으로 확대되었다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "BESS(Battery Energy Storage System)에서 주류 화학계열은 무엇이며 비중은 어느 정도인가?",
+        "ground_truth": "BESS에서는 LFP가 90% 이상을 차지하며 사실상 주류 화학계열이 되었다. LFP의 강점은 저가, 열안정성, 긴 수명이다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "배터리 산업의 주요 수요처(응용시장)는 어떻게 구분되는가?",
+        "ground_truth": "배터리 산업의 주요 수요처는 EV(전기차), grid-scale ESS, C&I(상업·산업) storage, consumer electronics, data center backup으로 구분된다. 2025년 기준 EV는 리튬이온 배터리 deployment의 70% 이상을 차지하고, ESS는 15% 이상으로 두 번째 성장축이다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "배터리 산업의 value chain 구조는 어떻게 구성되어 있는가?",
+        "ground_truth": "배터리 value chain은 재굴-정제-소재-셀/팩-시스템 통합-재사용-재활용으로 이어지는 연속 구조다. 상류에서는 리튬, 니켈, 코발트, 흑연, 망간, 구리 같은 광물의 확보와 정제 능력이 중요하고, 하류에서는 셀 제조, 모듈/팩 조립, BMS 통합, ESS용 PCS와 EMS, 프로젝트 EPC, 운영 소프트웨어가 중요하다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "에너지 저장 기술의 핵심 비교 지표에는 어떤 것들이 있는가?",
+        "ground_truth": "핵심 비교 지표는 라운드트립 효율(RTE, %), 사이클 수명(cycle life), 캘린더 수명(calendar life), 허용 방전 심도(DoD), 에너지 밀도(Wh/kg 또는 Wh/L), 정격 출력/에너지(kW·MW/kWh·MWh), 지속 시간(Duration, h), 설치 자본비($/kW, $/kWh), LCOS($/kWh 출력), 운영비(O&M), TRL(1-9), 안전·환경 리스크다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "Li-ion BESS의 기술 성숙도(TRL) 수준은 어느 정도인가?",
+        "ground_truth": "Li-ion BESS의 전형적 TRL은 8-9로, 전 세계 수십 GW급 설치가 이루어진 주력 그리드 저장 기술이다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "바나듐 레독스 플로우 배터리(VRFB)의 TRL과 현재 상용화 수준은?",
+        "ground_truth": "VRFB 등 플로우 배터리의 전형적 TRL은 6-8이며, MW급 프로젝트 다수와 상용 제품이 존재하나 시장 점유율은 제한적이다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "에너지 저장 기술 평가에서 Green/Amber/Red RAG 스케일은 무엇인가?",
+        "ground_truth": "Green(상위 경쟁력)은 동 기술군 상용 벤치마크 상위 20% 수준 이상, Amber(준수/평균)은 동 기술군 평균 ±20% 범위 내, Red(열위/과장)은 효율·수명·비용이 동 기술군 평균보다 열위이거나 물리적 한계·동종 문헌 대비 비현실적으로 과장된 수치를 의미한다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "한국의 K-배터리 경쟁력 강화 방안(2025)의 핵심 내용은 무엇인가?",
+        "ground_truth": "K-배터리 경쟁력 강화 방안(2025-11)은 차세대 배터리 기술 리더십 + 공급망 강화 + 신수요 창출을 전면에 내세우며, 연내 2035 이차전지 산업기술 로드맵 수립과 2029년까지 2,800억 원 투자 계획이 공식 요약·보도자료 형태로 확인된다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "2035 국가 온실가스 감축목표(NDC)와 배출권거래제 4기의 관계는?",
+        "ground_truth": "2025-11 국무회의 심의를 통해 2035 국가 온실가스 감축목표(NDC) 및 배출권거래제 4기(2026~2030) 할당계획이 확정되었고, 감축 범위·비용의 정책적 압력이 전력·산업·수송(전기차 포함) 전반으로 전이되는 구도다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "ESS 산업에서 스타트업이 진입할 수 있는 유망 영역은 어디인가?",
+        "ground_truth": "ESS에서는 value chain의 하류 중요성이 특히 크다. ESS 스타트업이 반드시 셀 기업일 필요가 없으며, 오히려 시스템 소프트웨어, 안전, 진단, 운영 최적화 영역이 진입 가능한 기회가 많다. 스타트업 기회는 대형 셀 공장이 아니라 value chain 전체의 비효율과 병목을 줄이는 곳에 분산되어 있다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "배터리 산업에서 중국 집중도가 가져오는 리스크는 무엇인가?",
+        "ground_truth": "IEA는 중국이 배터리 제조 전반에서 지배적인 위치를 점하고 있다고 설명한다. 구조적으로는 셀 제조뿐 아니라 양극재, 음극재, 정제 단계까지 중국의 비중이 높고, 특히 LFP와 흑연 공급망은 중국 편중이 강하다. 이는 가격 경쟁력의 원천이자 동시에 공급 안보 리스크의 원천이다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "전력수요 증가와 ESS의 관계는 어떠한가?",
+        "ground_truth": "Electricity 2026에 따르면 2026년부터 2030년까지 세계 전력수요는 연평균 3.6% 증가할 것으로 전망되며, 전력소비 증가 속도는 전체 에너지수요 증가보다 최소 2.5배 빠르다. 냉방, 산업 전기화, EV 충전, 데이터센터와 AI 인프라 확장이 동시에 전력수요를 끌어올리면서, ESS는 단순한 보조설비가 아니라 재생에너지 확대와 계통 안정성 유지에 필요한 핵심 인프라가 된다.",
+        "query_type": "market_policy"
+    },
+    {
+        "question": "나트륨이온 배터리의 특성과 시장 전망은 어떠한가?",
+        "ground_truth": "나트륨이온은 최근 많이 주목받지만, 아직 주류 대체재라기보다 application-specific 보완재로 보는 편이 확하다. IEA는 나트륨이온이 LFP보다 더 낮은 비용 잠재력을 가질 수 있지만, 에너지밀도가 낮아 주로 도심형 모빌리티와 stationary storage applications에 적합하다고 설명한다.",
+        "query_type": "tech_analysis"
+    },
+    {
+        "question": "TRL 7 이상의 에너지 저장 기술이 갖추어야 할 조건은 무엇인가?",
+        "ground_truth": "에너지 저장 맥락에서 TRL 7 이상은 통상 MW급 디몬스트레이터 이상, 전력계통 연계, 규제·코드 준수를 요구한다. TRL 7은 실제 운영 환경에서의 프로토타입, TRL 8은 상업 규모 시스템 완성·검증, TRL 9는 실제 운영 환경에서 반복 운전으로 신뢰성 입증이다.",
+        "query_type": "tech_analysis"
+    }
+]

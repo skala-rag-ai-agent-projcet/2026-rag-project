@@ -8,23 +8,27 @@ if not os.environ.get("DYLD_FALLBACK_LIBRARY_PATH"):
 
 from langchain_openai import ChatOpenAI
 from prompts.templates import REPORT_WRITER_PROMPT
-from config import LLM_MODEL, OUTPUT_DIR
+from config import LLM_MODEL, SINGLE_RESULTS_DIR
 
 
 def report_writer_node(state: dict) -> dict:
     """8장 구조 투자 보고서 생성 (Markdown → HTML → PDF)."""
-    profile = state.get("startup_profile", {})
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
     name = profile.get("company_name", "Unknown")
 
     print(f"\n[보고서 생성] {name} 투자 보고서 작성 중...")
 
-    tech = state.get("tech_analysis", {})
-    market = state.get("market_policy_analysis", {})
-    competitor = state.get("competitor_analysis", {})
-    criteria_scores = state.get("criteria_scores", {})
-    weighted_score = state.get("weighted_score", 0.0)
-    verdict = state.get("verdict", "hold")
-    memo = state.get("investment_memo", "")
+    tech = cs.get("technology_analysis", {})
+    market = cs.get("market_policy_analysis", {})
+    competitor = cs.get("competition_analysis", {})
+
+    inv = cs.get("investment_decision", {})
+    criteria_scores = inv.get("criteria_scores", {})
+    weighted_score = inv.get("weighted_score", 0.0)
+    verdict = inv.get("verdict", "hold")
+    memo = inv.get("investment_memo", "")
+
     refs = state.get("references", []) + state.get("sources", [])
 
     investment_decision = json.dumps(
@@ -57,14 +61,14 @@ def report_writer_node(state: dict) -> dict:
     report_md = response.content.strip()
 
     # Markdown 저장
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    md_path = os.path.join(OUTPUT_DIR, f"investment_report_{name}.md")
+    os.makedirs(SINGLE_RESULTS_DIR, exist_ok=True)
+    md_path = os.path.join(SINGLE_RESULTS_DIR, f"investment_report_{name}.md")
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(report_md)
     print(f"[보고서 생성] Markdown 저장: {md_path}")
 
     # PDF 변환
-    pdf_path = os.path.join(OUTPUT_DIR, f"investment_report_{name}.pdf")
+    pdf_path = os.path.join(SINGLE_RESULTS_DIR, f"investment_report_{name}.pdf")
     try:
         from weasyprint import HTML
 
@@ -142,6 +146,11 @@ def report_writer_node(state: dict) -> dict:
         pdf_path = md_path
 
     return {
-        "investment_report": pdf_path,
+        "outputs": {
+            "report_output_path": pdf_path,
+        },
+        "current_startup": {
+            "pipeline_flags": {"report_included": True},
+        },
         "log": [f"보고서 생성 완료: {pdf_path}"],
     }

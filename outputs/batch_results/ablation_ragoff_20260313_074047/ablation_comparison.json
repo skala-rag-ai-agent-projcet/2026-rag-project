@@ -1,0 +1,94 @@
+{
+  "reference_session": "20260312_201127",
+  "ablation_session": "ablation_ragoff_20260313_074047",
+  "comparison": [
+    {
+      "startup": "에이에스이티",
+      "rag_on_score": 51,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 52,
+      "rag_off_verdict": "reject",
+      "score_diff": -1
+    },
+    {
+      "startup": "액트이온배터리테크놀로지스",
+      "rag_on_score": 50,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 54,
+      "rag_off_verdict": "reject",
+      "score_diff": -4
+    },
+    {
+      "startup": "플렉셀스페이스",
+      "rag_on_score": 52,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 52,
+      "rag_off_verdict": "reject",
+      "score_diff": 0
+    },
+    {
+      "startup": "기가에떼",
+      "rag_on_score": 52,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 51,
+      "rag_off_verdict": "reject",
+      "score_diff": 1
+    },
+    {
+      "startup": "터빈크루",
+      "rag_on_score": 53,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 51,
+      "rag_off_verdict": "reject",
+      "score_diff": 2
+    },
+    {
+      "startup": "하이드로퀘벡",
+      "rag_on_score": 0,
+      "rag_on_verdict": "?",
+      "rag_off_score": 0,
+      "rag_off_verdict": "?",
+      "score_diff": 0
+    },
+    {
+      "startup": "라이온볼트",
+      "rag_on_score": 42,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 49,
+      "rag_off_verdict": "reject",
+      "score_diff": -7
+    },
+    {
+      "startup": "휴네이트",
+      "rag_on_score": 55,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 57,
+      "rag_off_verdict": "reject",
+      "score_diff": -2
+    },
+    {
+      "startup": "에이티비랩",
+      "rag_on_score": 51,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 58,
+      "rag_off_verdict": "reject",
+      "score_diff": -7
+    },
+    {
+      "startup": "스탠다드에너",
+      "rag_on_score": 0,
+      "rag_on_verdict": "?",
+      "rag_off_score": 0,
+      "rag_off_verdict": "?",
+      "score_diff": 0
+    },
+    {
+      "startup": "이온어스",
+      "rag_on_score": 54,
+      "rag_on_verdict": "reject",
+      "rag_off_score": 58,
+      "rag_off_verdict": "reject",
+      "score_diff": -4
+    }
+  ]
+}

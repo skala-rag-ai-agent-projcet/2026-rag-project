@@ -1,0 +1,78 @@
+{
+  "company_name": "그리너지",
+  "domain_classification": "배터리",
+  "core_technology": "리튬티탄산화물(LTO) 배터리를 개발하여 기존 리튬이온 배터리의 안전성과 효율성을 개선한 기술입니다.",
+  "total_score": 82,
+  "verdict": "invest",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 12,
+      "max_score": 15,
+      "level": "High",
+      "reason": "그리너지의 LTO 배터리는 SK온의 배터리 사업과 직접적으로 연결되며, SK 그룹의 에너지 밸류체인에 기여할 수 있는 기술입니다.",
+      "evidence": "LTO 배터리는 전기차 및 ESS 시장에서의 안전성과 효율성을 강조하며, SK온의 배터리 기술과 시너지를 낼 수 있습니다."
+    },
+    "market_size_growth": {
+      "score": 15,
+      "max_score": 17,
+      "level": "High",
+      "reason": "LTO 배터리 시장은 빠르게 성장하고 있으며, 특히 ESS 시장의 성장이 두드러집니다.",
+      "evidence": "글로벌 리튬이온 배터리 시장은 2025년 1,500억 달러를 초과할 것으로 예상되며, LTO 배터리의 수요가 증가할 것으로 보입니다."
+    },
+    "problem_solving": {
+      "score": 8,
+      "max_score": 10,
+      "level": "High",
+      "reason": "그리너지는 기존 리튬이온 배터리의 안전성과 효율성 문제를 해결하는 명확한 솔루션을 제공합니다.",
+      "evidence": "LTO 배터리는 열폭주 가능성이 낮고, 고출력 및 고수명 특성을 가지고 있어 다양한 산업에서 필수적인 도입이 요구됩니다."
+    },
+    "willingness_to_pay": {
+      "score": 6,
+      "max_score": 8,
+      "level": "Medium",
+      "reason": "고출력과 안전성을 제공하는 LTO 배터리에 대한 고객의 지불 의사는 높지만, 아직 일부 검증이 필요합니다.",
+      "evidence": "전기차 및 ESS 시장에서의 비용 절감과 효율 향상 기대치가 크지만, 실제 유료 계약 사례는 제한적입니다."
+    },
+    "tech_differentiation": {
+      "score": 12,
+      "max_score": 14,
+      "level": "High",
+      "reason": "그리너지는 TRL 7 이상의 기술 성숙도를 보이며, LTO 배터리 관련 여러 특허를 보유하고 있습니다.",
+      "evidence": "LTO 배터리는 기존 리튬이온 배터리 대비 안전성과 효율성에서 우위를 가지며, 모방이 어려운 기술입니다."
+    },
+    "scalability": {
+      "score": 8,
+      "max_score": 10,
+      "level": "High",
+      "reason": "그리너지의 사업 모델은 글로벌 확장이 가능하며, 다양한 산업에 적용할 수 있는 구조입니다.",
+      "evidence": "LTO 배터리는 전기차, ESS 등 다양한 분야에서 활용 가능성이 높아, 시장 확장에 유리합니다."
+    },
+    "revenue_model": {
+      "score": 6,
+      "max_score": 8,
+      "level": "Medium",
+      "reason": "LTO 배터리 판매와 관련 에너지 솔루션 제공을 통해 반복 매출이 가능하지만, 수익성 검증이 필요합니다.",
+      "evidence": "고마진 제품으로서의 특성을 지니고 있으나, 실매출 발생이 초기 단계입니다."
+    },
+    "risk": {
+      "score": 5,
+      "max_score": 6,
+      "level": "High",
+      "reason": "그리너지는 안전 규제와 환경 규제를 준수할 수 있는 기술력을 보유하고 있습니다.",
+      "evidence": "인허가 및 규제 준수에 대한 리스크가 낮으며, 공급망 안정성도 확보하고 있습니다."
+    },
+    "founder_team": {
+      "score": 10,
+      "max_score": 12,
+      "level": "High",
+      "reason": "창업자 방성용은 배터리 산업에서의 전문성을 갖추고 있으며, 팀의 역량이 충분합니다.",
+      "evidence": "산업 경험이 풍부하고, 기술과 사업을 겸비한 팀이 구성되어 있습니다."
+    }
+  },
+  "investment_memo": "그리너지는 LTO 배터리 기술을 통해 전기차 및 ESS 시장에서의 기회를 포착하고 있으며, SK 그룹의 에너지 밸류체인과의 시너지가 기대됩니다. 그러나 높은 제조 비용과 낮은 에너지 밀도가 경쟁에서의 도전 과제가 될 수 있습니다. 기술적 우위와 생산 능력 확보가 향후 성장의 핵심 요소로 작용할 것입니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 1
+}

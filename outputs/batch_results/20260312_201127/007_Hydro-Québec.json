@@ -1,0 +1,114 @@
+{
+  "company_name": "Hydro-Québec",
+  "domain_classification": "수력, 배터리",
+  "core_technology": "Hydro-Québec specializes in hydropower generation and is actively developing next-generation battery technologies, including lithium metal technology.",
+  "total_score": 53,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 계약이 없음",
+        "기술 내재화에 대한 구체적인 계획 부족"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "Hydro-Québec은 SK와의 공식적인 관계가 없음."
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치가 명확하지 않음",
+        "성장성에 대한 불확실성 존재"
+      ],
+      "reason": "시장 규모는 크지만 성장성에 대한 불확실성이 존재함",
+      "evidence": "TAM은 1,500억 달러 이상으로 예상되나, 구체적인 수치가 부족함."
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확히 정의되지 않음",
+        "기존 대안이 존재하여 경쟁력이 약할 수 있음"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않음",
+      "evidence": "기존의 수력 발전 및 배터리 기술 대안이 존재함."
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적인 사례 부족",
+        "ROI 수치가 명확하지 않음"
+      ],
+      "reason": "고객의 지불 의사가 검증되지 않음",
+      "evidence": "유료 PoC나 계약 사례가 없음."
+    },
+    "tech_differentiation": {
+      "score": 9,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 가까우나 추가 검증 필요",
+        "대량 생산에 대한 도전 과제가 존재"
+      ],
+      "reason": "기술이 차별적이나 상용화에 대한 추가 검증이 필요함",
+      "evidence": "고체 상태 배터리 기술이 TRL 6에 있음."
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적인 전략 부족",
+        "특정 지역에 의존할 가능성 존재"
+      ],
+      "reason": "확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 지역에 의존할 가능성이 있음."
+    },
+    "revenue_model": {
+      "score": 3,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "수익 구조가 명확하지 않음",
+        "파일럿 단계로 매출 발생이 미비"
+      ],
+      "reason": "수익 모델이 불명확함",
+      "evidence": "매출 발생이 미비하여 수익 구조가 불명확함."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성 존재",
+        "기후 변화에 따른 수자원 변동성 리스크"
+      ],
+      "reason": "리스크가 관리 가능하나 불확실성이 존재함",
+      "evidence": "규제 준수에 대한 불확실성이 존재함."
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 부족한 인력이 포함될 가능성",
+        "핵심 인력의 몰입도에 대한 불확실성"
+      ],
+      "reason": "팀의 역량이 일부 부족할 수 있음",
+      "evidence": "핵심 인력의 몰입도에 대한 불확실성이 존재함."
+    }
+  },
+  "investment_memo": "Hydro-Québec은 수력 발전과 차세대 배터리 기술 개발에 주력하고 있으나, SK 그룹과의 시너지 부족, 시장 성장성에 대한 불확실성, 고객의 지불 의사 검증 부족 등 여러 약점이 존재합니다. 기술 차별성은 있으나 상용화에 대한 추가 검증이 필요하며, 수익 모델이 불명확하여 투자하기에는 리스크가 큽니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 8,
+  "batch_id": 7
+}

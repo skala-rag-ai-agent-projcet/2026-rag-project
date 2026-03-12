@@ -6,6 +6,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
+from graph.state import deep_merge
 
 st.set_page_config(
     page_title="AI 스타트업 투자 평가 에이전트",
@@ -56,11 +57,12 @@ def run_single_evaluation(startup_name: str, retriever, show_progress=True):
     app = build_graph(retriever=retriever)
 
     initial_state = {
-        "question": startup_name,
+        "current_startup": {
+            "metadata": {"question": startup_name, "status": "pending"},
+        },
         "sources": [],
         "log": [],
         "rag_grading_log": [],
-        "status": "pending",
     }
 
     if show_progress:
@@ -91,7 +93,7 @@ def run_single_evaluation(startup_name: str, retriever, show_progress=True):
 
                 if final_state is None:
                     final_state = {}
-                final_state.update(node_output)
+                final_state = deep_merge(final_state, node_output)
 
     if show_progress:
         progress_bar.progress(100, text="평가 완료!")
@@ -105,22 +107,27 @@ def display_single_result(final_state: dict, startup_name: str):
         st.error("평가 실행에 실패했습니다.")
         return
 
-    domain_fit = final_state.get("domain_fit", False)
+    cs = final_state.get("current_startup", {})
+    flags = cs.get("pipeline_flags", {})
 
-    if not domain_fit:
+    if not flags.get("domain_check_passed", False):
         st.error(f"✗ **{startup_name}**은(는) Energy 도메인에 해당하지 않습니다.")
-        st.info(f"사유: {final_state.get('domain_fit_reason', 'N/A')}")
+        domain_cls = cs.get("domain_classification", {})
+        reason = domain_cls.get("reason", "N/A") if isinstance(domain_cls, dict) else "N/A"
+        st.info(f"사유: {reason}")
         return
 
-    if final_state.get("policy_violation", False):
+    if final_state.get("working", {}).get("policy_violation", False):
         st.error(f"✗ **{startup_name}**: 정책 위반으로 평가가 종료되었습니다.")
-        st.info(f"사유: {final_state.get('policy_violation_reason', 'N/A')}")
+        st.info(f"사유: {final_state.get('working', {}).get('policy_violation_reason', 'N/A')}")
         return
 
     # Header metrics
-    verdict = final_state.get("verdict", "N/A")
-    weighted_score = final_state.get("weighted_score", 0)
-    comp_score = final_state.get("competitiveness_score", 0)
+    inv = cs.get("investment_decision", {})
+    verdict = inv.get("verdict", "N/A")
+    weighted_score = inv.get("weighted_score", 0)
+    comp_analysis = cs.get("competition_analysis", {})
+    comp_score = comp_analysis.get("competitiveness_score", 0) if isinstance(comp_analysis, dict) else 0
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -131,7 +138,7 @@ def display_single_result(final_state: dict, startup_name: str):
     with col3:
         st.metric("경쟁력 점수", f"{comp_score} / 10")
     with col4:
-        report_path = final_state.get("investment_report", "")
+        report_path = final_state.get("outputs", {}).get("report_output_path", "")
         ext = os.path.splitext(report_path)[1] if report_path else ""
         st.metric("보고서", f"{'PDF' if ext == '.pdf' else 'Markdown'} 생성 완료")
 
@@ -145,7 +152,7 @@ def display_single_result(final_state: dict, startup_name: str):
 
     with tab1:
         st.subheader("9개 항목 점수표")
-        criteria_scores = final_state.get("criteria_scores", {})
+        criteria_scores = inv.get("criteria_scores", {})
 
         score_data = []
         for key, info in EVALUATION_CRITERIA.items():
@@ -159,11 +166,11 @@ def display_single_result(final_state: dict, startup_name: str):
 
         st.table(score_data)
         st.metric("가중합 점수", f"{weighted_score:.1f}")
-        st.info(final_state.get("investment_memo", ""))
+        st.info(inv.get("investment_memo", ""))
 
     with tab2:
         st.subheader("기업 프로필")
-        profile = final_state.get("startup_profile", {})
+        profile = cs.get("company_profile", {})
         if profile:
             for k, v in profile.items():
                 if isinstance(v, (list, dict)):
@@ -173,7 +180,7 @@ def display_single_result(final_state: dict, startup_name: str):
 
     with tab3:
         st.subheader("기술 분석")
-        tech = final_state.get("tech_analysis", {})
+        tech = cs.get("technology_analysis", {})
         if isinstance(tech, dict):
             if tech.get("parse_error"):
                 st.markdown(tech.get("summary", ""))
@@ -186,7 +193,7 @@ def display_single_result(final_state: dict, startup_name: str):
 
     with tab4:
         st.subheader("시장/정책 분석")
-        market = final_state.get("market_policy_analysis", {})
+        market = cs.get("market_policy_analysis", {})
         if isinstance(market, dict):
             for k, v in market.items():
                 st.markdown(f"**{k}**")
@@ -196,7 +203,7 @@ def display_single_result(final_state: dict, startup_name: str):
 
     with tab5:
         st.subheader("경쟁사 분석")
-        competitor = final_state.get("competitor_analysis", {})
+        competitor = cs.get("competition_analysis", {})
         if isinstance(competitor, dict):
             direct = competitor.get("direct_competitors", [])
             if direct and isinstance(direct, list):
@@ -211,7 +218,7 @@ def display_single_result(final_state: dict, startup_name: str):
 
     with tab6:
         st.subheader("투자 보고서")
-        report_path = final_state.get("investment_report", "")
+        report_path = final_state.get("outputs", {}).get("report_output_path", "")
 
         if report_path and os.path.exists(report_path):
             if report_path.endswith(".pdf"):
@@ -276,15 +283,9 @@ if mode == "Single":
 # ══════════════════════════════════════════════════════════════
 elif mode == "Batch":
     st.subheader("배치 모드")
-    st.caption("평가할 스타트업 개수를 입력하면 자동으로 에너지 도메인 스타트업을 탐색하여 평가합니다.")
+    st.caption("에너지 도메인 스타트업 10개를 자동으로 탐색하여 평가합니다.")
 
-    batch_count = st.number_input(
-        "평가할 스타트업 개수",
-        min_value=2,
-        max_value=10,
-        value=3,
-        step=1,
-    )
+    batch_count = 10
 
     batch_button = st.button("🚀 배치 평가 시작", type="primary")
 
@@ -293,9 +294,9 @@ elif mode == "Batch":
 
         # ── 1. 스타트업 탐색 ──────────────────────────────────
         with st.spinner(f"에너지 도메인 스타트업 {batch_count}개 탐색 중..."):
-            from app import discover_startups, _quick_domain_check, _to_canonical, generate_batch_summary_report
+            from app import _discover_with_descriptions, _batch_domain_check, _to_canonical, generate_batch_summary_report
             from config import BATCH_DOMAIN_REJECTION_THRESHOLD, EVALUATION_MAX_SCORES
-            startup_names = discover_startups(batch_count)
+            startup_names, startup_descs = _discover_with_descriptions(batch_count)
 
         if not startup_names:
             st.error("스타트업을 찾지 못했습니다.")
@@ -303,15 +304,10 @@ elif mode == "Batch":
 
         st.success(f"탐색된 스타트업: {', '.join(startup_names)}")
 
-        # ── 2. 도메인 사전 필터 ───────────────────────────────
-        with st.spinner("도메인 적합성 사전 검증 중..."):
-            domain_fit_names = []
-            rejected_names = []
-            for name in startup_names:
-                if _quick_domain_check(name):
-                    domain_fit_names.append(name)
-                else:
-                    rejected_names.append(name)
+        # ── 2. 배치 도메인 필터 (LLM 1회, 설명 포함) ──────────
+        with st.spinner("도메인 적합성 일괄 검증 중..."):
+            domain_fit_names = _batch_domain_check(startup_names, startup_descs)
+            rejected_names = [n for n in startup_names if n not in domain_fit_names]
 
         if rejected_names:
             st.warning(f"도메인 부적합: {', '.join(rejected_names)}")
@@ -319,11 +315,11 @@ elif mode == "Batch":
         # ── 3. 부적합 비율 초과 시 재탐색 ─────────────────────
         if startup_names and len(rejected_names) / len(startup_names) > BATCH_DOMAIN_REJECTION_THRESHOLD:
             with st.spinner("도메인 적합 스타트업 재탐색 중..."):
-                new_names = discover_startups(batch_count)
-                for name in new_names:
-                    if name not in domain_fit_names and name not in rejected_names:
-                        if _quick_domain_check(name):
-                            domain_fit_names.append(name)
+                new_names, new_descs = _discover_with_descriptions(batch_count)
+                new_fit = _batch_domain_check(new_names, new_descs)
+                for name in new_fit:
+                    if name not in domain_fit_names:
+                        domain_fit_names.append(name)
                 domain_fit_names = domain_fit_names[:batch_count]
 
         if not domain_fit_names:
@@ -341,11 +337,12 @@ elif mode == "Batch":
             st.subheader(f"[{i+1}/{len(domain_fit_names)}] {name}")
 
             initial_state = {
-                "question": name,
+                "current_startup": {
+                    "metadata": {"question": name, "status": "pending"},
+                },
                 "sources": [],
                 "log": [],
                 "rag_grading_log": [],
-                "status": "pending",
             }
 
             progress_bar = st.progress(0, text="파이프라인 시작...")
@@ -360,7 +357,8 @@ elif mode == "Batch":
                     "batch_competitor": (55, "경쟁사 분석 완료"),
                     "batch_input_validation": (65, "입력 검증 완료"),
                     "batch_investment_decision": (80, "투자 판단 완료"),
-                    "batch_evaluation_check": (95, "평가 검증 완료"),
+                    "batch_evaluation_check": (90, "평가 검증 완료"),
+                    "batch_aggregation": (95, "집계 완료"),
                 }
                 for event in batch_app.stream(initial_state, stream_mode="updates"):
                     for node_name, node_output in event.items():
@@ -369,7 +367,7 @@ elif mode == "Batch":
                             progress_bar.progress(pct, text=text)
                         if final_state is None:
                             final_state = {}
-                        final_state.update(node_output)
+                        final_state = deep_merge(final_state, node_output)
 
             progress_bar.progress(100, text="평가 완료!")
             all_results.append(final_state)
@@ -399,8 +397,8 @@ elif mode == "Batch":
 
                 with st.expander(f"📌 {cname} — {badge} ({total}/100)", expanded=False):
                     # 정책 위반 경고
-                    if fs.get("policy_violation", False):
-                        st.warning(f"정책 위반: {fs.get('policy_violation_reason', 'N/A')}")
+                    if fs.get("working", {}).get("policy_violation", False):
+                        st.warning(f"정책 위반: {fs.get('working', {}).get('policy_violation_reason', 'N/A')}")
 
                     # 메트릭
                     col1, col2, col3 = st.columns(3)
@@ -409,9 +407,10 @@ elif mode == "Batch":
                     with col2:
                         st.metric("총점", f"{total} / 100")
                     with col3:
-                        comp = fs.get("competitor_analysis", {})
+                        cs = fs.get("current_startup", {})
+                        comp = cs.get("competition_analysis", {})
                         if isinstance(comp, dict) and comp.get("analyzed", False):
-                            st.metric("경쟁력", f"{fs.get('competitiveness_score', 0)}/10")
+                            st.metric("경쟁력", f"{comp.get('competitiveness_score', 0)}/10")
                         else:
                             st.metric("경쟁사 분석", "생략됨")
 
@@ -419,7 +418,8 @@ elif mode == "Batch":
 
                     # 점수표 (score/max_score)
                     st.markdown("**9개 항목 점수표**")
-                    criteria_scores = fs.get("criteria_scores", {})
+                    inv = cs.get("investment_decision", {})
+                    criteria_scores = inv.get("criteria_scores", {})
                     score_data = []
                     for key, info in EVALUATION_CRITERIA.items():
                         entry = criteria_scores.get(key, {})
@@ -431,12 +431,12 @@ elif mode == "Batch":
                             "증거": entry.get("evidence", "N/A"),
                         })
                     st.table(score_data)
-                    st.info(fs.get("investment_memo", ""))
+                    st.info(inv.get("investment_memo", ""))
 
                     # 상세 탭
                     t1, t2, t3, t4 = st.tabs(["🏢 프로필", "🔬 기술", "📈 시장/정책", "⚔️ 경쟁사"])
                     with t1:
-                        profile = fs.get("startup_profile", {})
+                        profile = cs.get("company_profile", {})
                         if profile:
                             for k, v in profile.items():
                                 if isinstance(v, (list, dict)):
@@ -444,19 +444,19 @@ elif mode == "Batch":
                                 else:
                                     st.markdown(f"**{k}**: {v}")
                     with t2:
-                        tech = fs.get("tech_analysis", {})
+                        tech = cs.get("technology_analysis", {})
                         if isinstance(tech, dict):
                             for k, v in tech.items():
                                 st.markdown(f"**{k}**")
                                 st.write(v)
                     with t3:
-                        market = fs.get("market_policy_analysis", {})
+                        market = cs.get("market_policy_analysis", {})
                         if isinstance(market, dict):
                             for k, v in market.items():
                                 st.markdown(f"**{k}**")
                                 st.write(v)
                     with t4:
-                        competitor = fs.get("competitor_analysis", {})
+                        competitor = cs.get("competition_analysis", {})
                         if isinstance(competitor, dict):
                             if not competitor.get("analyzed", True):
                                 st.warning(f"생략됨: {competitor.get('skip_reason', 'N/A')}")
