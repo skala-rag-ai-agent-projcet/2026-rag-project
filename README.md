@@ -1,0 +1,2 @@
+# 2026-rag-project
+2026-SKALA-RAG-PROJECT
