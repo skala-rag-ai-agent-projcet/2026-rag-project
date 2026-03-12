@@ -1,7 +1,16 @@
+# OpenAI key / env files
 .env
+.env.*
+!.env.example
+
+# fixed virtualenv name
 venv_ai/
+
+# Python cache
 __pycache__/
-*.pyc
-data/faiss_index/
-outputs/
+*.py[cod]
+
+# IDE / OS
+.vscode/
+.idea/
 .DS_Store
