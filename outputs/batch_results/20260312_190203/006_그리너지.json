@@ -1,0 +1,14 @@
+{
+  "batch_id": 6,
+  "company_name": "그리너지",
+  "domain_classification": "",
+  "core_technology": "",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null
+}

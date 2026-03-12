@@ -1,0 +1,78 @@
+{
+  "company_name": "터빈크루",
+  "domain_classification": "재생에너지, 풍력, 태양광",
+  "core_technology": "인공지능(AI)과 빅데이터를 활용하여 풍력 및 태양광 발전 시스템을 최적화하는 기술을 보유하고 있습니다.",
+  "total_score": 80,
+  "verdict": "invest",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 12,
+      "max_score": 15,
+      "level": "High",
+      "reason": "터빈크루의 기술은 SK의 에너지 밸류체인과 직접 연결되며, 특히 SK E&S와의 협업 가능성이 높음.",
+      "evidence": "AI와 빅데이터를 활용한 재생에너지 솔루션은 SK의 전력 사업과 시너지를 낼 수 있음."
+    },
+    "market_size_growth": {
+      "score": 14,
+      "max_score": 17,
+      "level": "High",
+      "reason": "재생에너지 시장의 TAM이 1조 2천억 달러에서 3조 8천억 달러로 성장할 것으로 예상됨.",
+      "evidence": "터빈크루의 기술은 이 시장의 성장에 기여할 수 있는 잠재력을 가지고 있음."
+    },
+    "problem_solving": {
+      "score": 9,
+      "max_score": 10,
+      "level": "High",
+      "reason": "터빈크루는 에너지 효율성을 극대화하고 농업 자동화를 통해 고객의 명확한 pain point를 해결.",
+      "evidence": "고객들은 에너지 비용 절감과 효율 향상을 기대하고 있음."
+    },
+    "willingness_to_pay": {
+      "score": 6,
+      "max_score": 8,
+      "level": "Medium",
+      "reason": "고객들이 장기적인 ROI를 기대하고 있으나, 일부 유료 전환 사례가 검증 중.",
+      "evidence": "농업 자동화 플랫폼의 경우 초기 투자 비용을 상회하는 장기적인 ROI를 기대하고 있음."
+    },
+    "tech_differentiation": {
+      "score": 11,
+      "max_score": 14,
+      "level": "Medium",
+      "reason": "TRL 6으로 상용화 단계에 있으며, CES 2026 혁신상 수상으로 기술력을 입증.",
+      "evidence": "AI 및 에너지 하드웨어 융합 기술에 대한 특허를 보유하고 있음."
+    },
+    "scalability": {
+      "score": 8,
+      "max_score": 10,
+      "level": "High",
+      "reason": "글로벌 확장 가능성이 높고, 다양한 산업에 적용할 수 있는 구조.",
+      "evidence": "스마트 농업 및 소형 발전기 시장에서의 수요 증가가 긍정적인 요소로 작용."
+    },
+    "revenue_model": {
+      "score": 6,
+      "max_score": 8,
+      "level": "Medium",
+      "reason": "스마트폴 및 소형 발전기 판매, AI 기반 농업 자동화 플랫폼의 구독 모델로 구성.",
+      "evidence": "반복 매출 가능성이 높으나, 수익성 검증이 필요."
+    },
+    "risk": {
+      "score": 5,
+      "max_score": 6,
+      "level": "High",
+      "reason": "현재의 에너지 정책 및 규제와 충돌하지 않으며, 인허가 및 안전 규제에 대한 리스크가 낮음.",
+      "evidence": "정책 지원이 긍정적인 영향을 미칠 것으로 예상됨."
+    },
+    "founder_team": {
+      "score": 9,
+      "max_score": 12,
+      "level": "Medium",
+      "reason": "창업자 전기은은 에너지 및 AI 분야에서의 경험이 있으나, 팀 보강이 필요할 수 있음.",
+      "evidence": "기술과 사업을 겸비한 팀이지만, 초기 스타트업으로서 인력 확충이 필요."
+    }
+  },
+  "investment_memo": "터빈크루는 AI와 빅데이터를 활용한 혁신적인 재생에너지 솔루션을 제공하며, 시장 성장 가능성이 높고 SK 그룹과의 시너지가 기대됩니다. 그러나 초기 투자 비용과 시스템 통합의 복잡성 등 리스크가 존재하므로, 지속적인 기술 검증과 고객 확보가 필요합니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 3
+}

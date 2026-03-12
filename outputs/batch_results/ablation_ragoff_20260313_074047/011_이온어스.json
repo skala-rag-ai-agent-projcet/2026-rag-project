@@ -1,0 +1,114 @@
+{
+  "company_name": "이온어스",
+  "domain_classification": "배터리, 재생에너지, 전기",
+  "core_technology": "이온어스는 전기차 배터리를 기반으로 한 이동형 에너지 저장장치(ESS)를 개발하여, 전력 생산에서 소비 전 과정에 걸친 탄소중립을 실현하는 기술을 보유하고 있습니다.",
+  "total_score": 58,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 계약이 없음",
+        "기술 내재화에 대한 불확실성 존재"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "구체적 파트너십이나 협력 사례 없음"
+    },
+    "market_size_growth": {
+      "score": 12,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "시장 성장률이 다소 불확실함",
+        "경쟁이 치열하여 시장 점유율 확보에 어려움이 있을 수 있음"
+      ],
+      "reason": "한국 ESS 시장의 성장 가능성은 있으나, 불확실성이 존재함",
+      "evidence": "CAGR 9.89%로 성장하나, 경쟁 심화 우려"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "디젤 발전기 대체의 필요성은 있으나, 기존 대안이 존재함",
+        "고객의 pain point가 명확하나 개선 폭이 제한적일 수 있음"
+      ],
+      "reason": "고객의 필요는 존재하나, 기존 대안과의 경쟁이 치열함",
+      "evidence": "디젤 발전기 대체 수요는 있으나, 대안 기술 존재"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사가 검증되지 않음",
+        "ROI 수치가 명확하지 않음"
+      ],
+      "reason": "고객의 지불 의사에 대한 명확한 데이터 부족",
+      "evidence": "유료 PoC나 계약 사례 없음"
+    },
+    "tech_differentiation": {
+      "score": 10,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "기술적 한계로 인해 내구성 및 원가 문제 존재",
+        "대규모 생산 시 품질 관리의 어려움이 있음"
+      ],
+      "reason": "TRL 7로 상용화에 근접하나, 기술적 한계가 존재함",
+      "evidence": "27개의 특허 보유하나, 내구성 문제 우려"
+    },
+    "scalability": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "특정 고객 및 지역에 의존할 가능성이 있음",
+        "글로벌 확장 가능성에 대한 구체적 계획 부족"
+      ],
+      "reason": "일부 지역 및 산업 확장 가능하나 제약이 존재함",
+      "evidence": "초기 고객 확보의 어려움"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 명확하나 수익성 미검증",
+        "실매출 발생이 아직 이루어지지 않음"
+      ],
+      "reason": "반복 매출 구조가 있으나, 수익성 검증이 필요함",
+      "evidence": "매출 발생이 아직 이루어지지 않음"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "인허가 및 안전 규제에 대한 지속적인 관리 필요",
+        "규제 리스크가 완전히 제거되지 않음"
+      ],
+      "reason": "규제 리스크가 낮아졌으나, 여전히 관리 필요",
+      "evidence": "인허가 및 안전 규제 관련 지속적 관리 필요"
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "창업자의 산업 경험이 다소 부족할 수 있음",
+        "핵심 인력의 보강 필요성 존재"
+      ],
+      "reason": "창업자의 경험이 다소 부족하나, 팀의 역량은 긍정적",
+      "evidence": "산업 경험이 4년으로 짧음"
+    }
+  },
+  "investment_memo": "이온어스는 이동형 ESS 시장에서 혁신적인 기술을 보유하고 있으나, SK와의 시너지 부족, 시장 경쟁 심화, 고객 지불 의사 검증 부족 등의 리스크가 존재합니다. 기술적 차별성과 상용화 가능성은 있으나, 초기 고객 확보와 수익성 검증이 필요합니다. 따라서 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 11
+}

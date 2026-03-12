@@ -1,0 +1,114 @@
+{
+  "company_name": "인코어드테크놀로지스",
+  "domain_classification": "전기에너지",
+  "core_technology": "인코어드테크놀로지스는 IoT와 AI 분석을 결합한 에너지 데이터 관리 및 최적화 기술을 개발하고 있습니다. 이를 통해 태양광 및 풍력 발전량 예측에서 높은 정확도를 자랑합니다.",
+  "total_score": 53,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "공식적인 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁 심화로 인한 성장성 제한"
+      ],
+      "reason": "시장 규모는 크지만 성장 전망이 불확실함",
+      "evidence": "TAM이 $929.50억으로 추정되나, 경쟁 심화로 인한 불확실성 존재"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안의 존재"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않음",
+      "evidence": "기존 대안이 존재하여 경쟁력이 제한적일 수 있음"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "유료 PoC 확보 미비",
+        "ROI 수치의 불명확성"
+      ],
+      "reason": "고객의 지불 의사가 검증되지 않음",
+      "evidence": "유료 PoC 사례가 부족함"
+    },
+    "tech_differentiation": {
+      "score": 10,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "기술적 한계로 인한 예측 정확도 유지의 어려움",
+        "경쟁사 대비 차별성이 제한적일 수 있음"
+      ],
+      "reason": "기술은 상용화되었으나 경쟁사 대비 차별성이 부족할 수 있음",
+      "evidence": "TRL 7로 상용화되었으나 경쟁사 다수 존재"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장에 대한 제약",
+        "특정 고객/지역 의존"
+      ],
+      "reason": "확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 시장에 의존하고 있어 확장성에 한계가 있음"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조의 검증 부족",
+        "매출 발생 미시작"
+      ],
+      "reason": "수익 모델이 명확하나 검증이 부족함",
+      "evidence": "매출 발생이 미시작 상태"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 변화에 따른 불확실성",
+        "데이터 보안 관련 리스크"
+      ],
+      "reason": "규제 리스크가 존재하나 관리 가능함",
+      "evidence": "인허가 진행 중이나 불확실성 존재"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험 부족",
+        "핵심 인력 미확보"
+      ],
+      "reason": "창업자와 팀의 경험이 부족함",
+      "evidence": "산업 경험이 제한적임"
+    }
+  },
+  "investment_memo": "인코어드테크놀로지스는 AI와 IoT를 활용한 에너지 데이터 관리 솔루션을 제공하지만, SK 에너지 밸류체인과의 직접적인 시너지가 부족하고, 시장 성장성에 대한 불확실성이 존재합니다. 또한, 고객의 지불 의사와 수익 모델의 검증이 미비하여 투자 리스크가 높습니다. 따라서 현재로서는 투자를 기각하는 것이 바람직합니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 10
+}

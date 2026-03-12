@@ -1,0 +1,15 @@
+{
+  "batch_id": 26,
+  "company_name": "워커린스페이스",
+  "domain_classification": "로봇 위성을 개발하여 우주 및 지구 환경에서의 데이터 수집 및 분석을 수행하는 스타트업.",
+  "core_technology": "로봇 위성을 개발하여 우주 및 지구 환경에서의 데이터 수집 및 분석을 수행하는 스타트업.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 로봇 위성을 개발하여 우주 및 지구 환경에서의 데이터 수집 및 분석을 수행하는 스타트업.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

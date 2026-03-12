@@ -1,0 +1,15 @@
+{
+  "batch_id": 6,
+  "company_name": "딜리버스",
+  "domain_classification": "AI 물류 솔루션을 제공하는 스타트업으로, 물류 효율성을 극대화하는 기술을 개발하고 있습니다.",
+  "core_technology": "AI 물류 솔루션을 제공하는 스타트업으로, 물류 효율성을 극대화하는 기술을 개발하고 있습니다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 물류 솔루션을 제공하는 스타트업으로, 물류 효율성을 극대화하는 기술을 개발하고 있습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

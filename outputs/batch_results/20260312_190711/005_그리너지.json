@@ -1,0 +1,114 @@
+{
+  "company_name": "그리너지",
+  "domain_classification": "배터리",
+  "core_technology": "리튬티탄산화물(LTO) 배터리를 개발하여 기존 리튬이온 배터리의 단점을 극복한 기술입니다. LTO 배터리는 높은 안전성과 긴 수명을 자랑합니다.",
+  "total_score": 57,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "구체적 파트너십이나 협력 사례 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "LTO 배터리 시장의 인지도 부족",
+        "전기차와 같은 고에너지 밀도 요구 분야에서의 한계"
+      ],
+      "reason": "LTO 배터리 시장의 성장 가능성은 있으나 인지도 부족으로 불확실성 존재",
+      "evidence": "TAM/SAM 수치가 존재하나 시장 인지도 부족"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고에너지 밀도 요구 분야에서의 대안 존재",
+        "기술적 한계로 인한 특정 용도 제한"
+      ],
+      "reason": "고객의 pain point는 존재하나 대안이 존재하여 시급성이 낮음",
+      "evidence": "기술적 한계로 인해 특정 용도에 제한이 있음"
+    },
+    "willingness_to_pay": {
+      "score": 5,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치의 구체적 제시 부족"
+      ],
+      "reason": "고객의 지불 의사는 있으나 구체적인 검증이 부족함",
+      "evidence": "지불 의사에 대한 구체적 사례 부족"
+    },
+    "tech_differentiation": {
+      "score": 10,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "LTO 배터리의 에너지 밀도가 낮음",
+        "경쟁사 대비 기술적 우위의 명확성 부족"
+      ],
+      "reason": "기술적 차별성은 있으나 경쟁사 대비 우위가 명확하지 않음",
+      "evidence": "TRL 7로 상용화 단계에 있으나 에너지 밀도 한계 존재"
+    },
+    "scalability": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "특정 산업군에 의존하는 구조",
+        "글로벌 확장 가능성에 대한 불확실성"
+      ],
+      "reason": "일부 산업에서의 확장은 가능하나 제약이 존재",
+      "evidence": "특정 고객군에 의존하는 구조"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "반복 매출 구조의 불확실성",
+        "실매출 발생 여부 미확인"
+      ],
+      "reason": "수익 구조가 명확하지 않으며 실매출 발생이 확인되지 않음",
+      "evidence": "매출 발생 여부 미확인"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "EU 배터리 규제에 대한 불확실성",
+        "초기 투자 비용의 부담"
+      ],
+      "reason": "규제 리스크가 존재하나 관리 가능한 수준",
+      "evidence": "EU 규제에 대한 불확실성 존재"
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "팀의 산업 경험 부족",
+        "핵심 인력의 확실성 부족"
+      ],
+      "reason": "창업자의 경험은 있으나 팀의 역량이 부족할 수 있음",
+      "evidence": "핵심 인력의 경험 부족"
+    }
+  },
+  "investment_memo": "그리너지는 LTO 배터리 기술을 통해 기존 리튬이온 배터리의 단점을 극복하고 있으나, 시장 인지도 부족과 기술적 한계로 인해 특정 용도에 제한이 있습니다. 또한, 수익 모델의 불확실성과 규제 리스크가 존재하여 투자하기에는 리스크가 크다고 판단됩니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 5
+}

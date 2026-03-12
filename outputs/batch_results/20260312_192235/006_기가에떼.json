@@ -1,0 +1,114 @@
+{
+  "company_name": "기가에떼",
+  "domain_classification": "열에너지 저장",
+  "core_technology": "정온 열배터리(ITP Battery)를 개발하여 고온 폐열이나 출력 제한 재생에너지를 열 형태로 전환해 저장하는 기술입니다.",
+  "total_score": 45,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 계약이 없음",
+        "기술 내재화에 대한 구체적인 계획 부족"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "기술 및 사업 모델이 SK와의 시너지를 명확히 보여주지 않음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치가 $10B 이상이 아님",
+        "시장 성장성에 대한 불확실성 존재"
+      ],
+      "reason": "열에너지 저장 시장의 성장 가능성은 있으나, TAM이 낮고 불확실성이 존재함",
+      "evidence": "TAM이 약 60억 달러로 평가됨"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고온 열 저장 기술의 필요성이 명확하지 않음",
+        "기존 대안 기술이 존재함"
+      ],
+      "reason": "고온 폐열 활용의 필요성은 있으나, 기존 기술과의 경쟁에서 우위를 점하기 어려움",
+      "evidence": "기존 리튬이온 배터리와의 비교에서 차별성이 부족함"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적인 사례 부족",
+        "ROI 수치가 검증되지 않음"
+      ],
+      "reason": "고온 열배터리 기술의 경제성에 대한 검증이 필요함",
+      "evidence": "고객의 지불 의사에 대한 구체적인 데이터가 부족함"
+    },
+    "tech_differentiation": {
+      "score": 5,
+      "max_score": 14,
+      "level": "Low",
+      "weakness": [
+        "TRL 4로 상용화에 한계가 있음",
+        "기술적 차별성이 명확하지 않음"
+      ],
+      "reason": "기술이 PoC 단계에 있어 상용화에 대한 불확실성이 큼",
+      "evidence": "기술적 차별성이 부족하고 경쟁사들이 이미 상용화된 기술을 보유하고 있음"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적인 전략 부족",
+        "특정 산업에 의존할 가능성 존재"
+      ],
+      "reason": "일부 산업에 국한될 가능성이 있으며, 글로벌 확장 전략이 부족함",
+      "evidence": "시장 점유율 목표가 초기 1%로 설정되어 있음"
+    },
+    "revenue_model": {
+      "score": 3,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "매출 발생이 초기 단계에 있음",
+        "수익 구조가 명확하지 않음"
+      ],
+      "reason": "수익 모델이 초기 단계에 있어 검증되지 않음",
+      "evidence": "실제 매출 발생이 없고, 수익 구조가 불명확함"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "인허가 및 규제 리스크에 대한 불확실성 존재",
+        "기술적 신뢰성 확보에 대한 우려"
+      ],
+      "reason": "규제 리스크가 존재하나, 현재로서는 큰 문제가 되지 않을 가능성이 있음",
+      "evidence": "인허가 및 안전 규제에 대한 명확한 리스크는 보이지 않음"
+    },
+    "founder_team": {
+      "score": 4,
+      "max_score": 12,
+      "level": "Low",
+      "weakness": [
+        "창업자의 산업 경험이 부족함",
+        "핵심 인력의 확보가 미비함"
+      ],
+      "reason": "창업자의 경험이 부족하여 사업 성공 가능성이 낮아 보임",
+      "evidence": "산업 경험이 부족하고, 핵심 인력이 미비함"
+    }
+  },
+  "investment_memo": "기가에떼는 고온 열배터리 기술을 통해 열에너지 저장 시장에서의 기회를 포착하고 있으나, 기술의 상용화 단계가 낮고, 시장 내 경쟁이 치열하여 투자 리스크가 큽니다. 또한, 고객의 지불 의사와 수익 모델이 명확하지 않아 사업의 지속 가능성에 의문이 있습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 6,
+  "batch_id": 6
+}

@@ -1,0 +1,114 @@
+{
+  "company_name": "Hydro-Québec",
+  "domain_classification": "Hydropower, Renewable Energy",
+  "core_technology": "Hydro-Québec specializes in hydroelectric power generation and has developed advanced technologies for energy storage and distribution. The company is also involved in battery technology development, particularly in lithium-metal anodes.",
+  "total_score": 53,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "Hydro-Québec과 SK의 공식 파트너십이나 MOU가 없음",
+        "기술 내재화에 대한 구체적인 계획 부족"
+      ],
+      "reason": "Hydro-Québec의 기술이 SK의 에너지 밸류체인과 직접 연결되기 어려움",
+      "evidence": "공식적인 파트너십이나 MOU가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM이 $10B 이상이지만, 성장률이 4.5%로 낮음",
+        "캐나다 내 시장의 성장성이 제한적일 수 있음"
+      ],
+      "reason": "시장 규모는 크지만 성장률이 낮아 불확실성이 존재",
+      "evidence": "TAM $280.87B에서 $436.92B로 성장 예상, CAGR 4.5%"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "기존 대안이 존재하며, 개선 폭이 제한적일 수 있음",
+        "고객의 pain point가 명확하지 않음"
+      ],
+      "reason": "고객의 pain point가 명확하지 않으며, 기존 대안이 존재",
+      "evidence": "기술의 개선 폭이 제한적일 수 있음"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사가 검증되지 않음",
+        "ROI 수치가 명확하지 않음"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "지불 의사에 대한 구체적인 데이터 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 다소 미흡",
+        "경쟁사와의 기술적 차별성이 불명확할 수 있음"
+      ],
+      "reason": "기술이 TRL 6으로 상용화에 다소 미흡하며, 경쟁사와의 차별성이 불명확",
+      "evidence": "특허 보유는 있으나 상용화에 대한 불확실성"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "기후 변화로 인한 수자원 가용성의 불확실성",
+        "특정 지역에 의존하는 구조"
+      ],
+      "reason": "기후 변화로 인한 리스크가 존재하며, 특정 지역에 의존하는 구조",
+      "evidence": "수자원 가용성의 불확실성"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 정부 지원에 의존적",
+        "실매출 발생이 미비함"
+      ],
+      "reason": "수익 구조가 정부 지원에 의존적이며, 실매출 발생이 미비",
+      "evidence": "정부의 재정 지원에 의존"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 리스크가 존재하지만 관리 가능",
+        "환경 규제 준수에 대한 불확실성"
+      ],
+      "reason": "규제 리스크가 존재하지만 관리 가능한 수준",
+      "evidence": "인허가 및 환경 규제 준수 필요"
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "CEO의 경력은 있지만, 팀의 전문성이 부족할 수 있음",
+        "핵심 인력의 몰입도에 대한 불확실성"
+      ],
+      "reason": "CEO의 경력은 있지만 팀의 전문성이 부족할 수 있음",
+      "evidence": "CEO의 경력은 10년 이상이나 팀의 전문성 부족"
+    }
+  },
+  "investment_memo": "Hydro-Québec은 강력한 재정적 지원과 안정적인 전력 공급을 통해 퀘벡주 내에서 우위를 점하고 있으나, 기술 상용화에 대한 불확실성과 높은 생산 비용, 기후 변화로 인한 리스크가 존재합니다. 시장 성장성이 제한적이며, 고객의 지불 의사와 수익 구조에 대한 불확실성이 있어 투자하기에는 리스크가 큽니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 8,
+  "batch_id": 6
+}

@@ -1,0 +1,15 @@
+{
+  "batch_id": 13,
+  "company_name": "해빗팩토리",
+  "domain_classification": "인슈어테크 스타트업으로, 보험 관련 혁신적인 솔루션을 제공.",
+  "core_technology": "인슈어테크 스타트업으로, 보험 관련 혁신적인 솔루션을 제공.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 인슈어테크 스타트업으로, 보험 관련 혁신적인 솔루션을 제공.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

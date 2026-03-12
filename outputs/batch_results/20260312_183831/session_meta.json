@@ -1,0 +1,17 @@
+{
+  "session_id": "20260312_183831",
+  "started_at": "2026-03-12T18:38:38.983918",
+  "count": 3,
+  "general": false,
+  "all_startups": [
+    "그리너지",
+    "에이에스이티",
+    "터빈크루"
+  ],
+  "domain_fit": [
+    "그리너지",
+    "에이에스이티",
+    "터빈크루"
+  ],
+  "domain_rejected": []
+}

@@ -1,0 +1,15 @@
+{
+  "batch_id": 18,
+  "company_name": "뤼튼테크놀로지스",
+  "domain_classification": "생성형 AI 스타트업으로, 다양한 업무에 특화된 AI 도구를 제공하는 서비스를 운영하고 있다.",
+  "core_technology": "생성형 AI 스타트업으로, 다양한 업무에 특화된 AI 도구를 제공하는 서비스를 운영하고 있다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 생성형 AI 스타트업으로, 다양한 업무에 특화된 AI 도구를 제공하는 서비스를 운영하고 있다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

@@ -1,0 +1,15 @@
+{
+  "batch_id": 11,
+  "company_name": "아크",
+  "domain_classification": "병원 및 의원에 대한 영업을 통해 의료 서비스의 접근성을 높이는 플랫폼.",
+  "core_technology": "병원 및 의원에 대한 영업을 통해 의료 서비스의 접근성을 높이는 플랫폼.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 병원 및 의원에 대한 영업을 통해 의료 서비스의 접근성을 높이는 플랫폼.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

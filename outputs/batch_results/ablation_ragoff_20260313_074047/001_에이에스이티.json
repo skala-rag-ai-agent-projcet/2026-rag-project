@@ -1,0 +1,114 @@
+{
+  "company_name": "에이에스이티",
+  "domain_classification": "배터리",
+  "core_technology": "에이에스이티는 화재 안전성과 에너지 밀도를 동시에 향상시킨 전고체·복합계 전해질막 기술을 개발하고 있습니다. 이 기술은 기존 리튬이온 배터리의 액체 전해질과 혼용 사용이 가능하여, 반전고체 전지부터 완전한 전고체 전지까지 적용할 수 있습니다.",
+  "total_score": 52,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 계약이 없음",
+        "기술 내재화에 대한 구체적 계획 부족"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접 연결성이 부족함",
+      "evidence": "공식적인 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치가 구체적이지 않음",
+        "성장성에 대한 불확실성 존재"
+      ],
+      "reason": "시장 규모는 크지만 구체적인 수치가 부족함",
+      "evidence": "TAM/SAM 수치 미제공"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "기술적 한계로 인한 성능 검증 필요",
+        "기존 대안과의 차별성이 불명확할 수 있음"
+      ],
+      "reason": "고객의 pain point는 존재하나 해결의 긴급성이 낮음",
+      "evidence": "기술적 한계로 인한 성능 검증 필요"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적 사례 부족",
+        "ROI 수치 미제공"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "지불 의사 미검증"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 완전히 근접하지 않음",
+        "대규모 양산 시 원가 문제 우려"
+      ],
+      "reason": "기술 차별성은 있으나 추가 검증이 필요함",
+      "evidence": "TRL 6, 상용화 단계에 있음"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적 전략 부족",
+        "특정 산업에 의존할 가능성 존재"
+      ],
+      "reason": "일부 산업에서의 확장 가능성은 있으나 제약이 존재함",
+      "evidence": "확장 구조 미비"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "파일럿 단계로 수익 구조 미검증",
+        "반복 매출 가능성에 대한 확신 부족"
+      ],
+      "reason": "수익 모델이 명확하지 않음",
+      "evidence": "매출 발생 미시작"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 및 인증 과정에서의 불확실성 존재",
+        "안전 인증 및 환경 규제 준수 필요"
+      ],
+      "reason": "리스크가 관리 가능한 수준이나 불확실성이 존재함",
+      "evidence": "인허가 진행 중"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "창업자의 산업 경험이 부족할 수 있음",
+        "핵심 인력의 전문성에 대한 정보 부족"
+      ],
+      "reason": "팀의 전문성이 다소 부족할 수 있음",
+      "evidence": "산업 경험 부족"
+    }
+  },
+  "investment_memo": "에이에스이티는 전고체·복합계 전해질막 기술을 통해 차세대 배터리 시장에서의 경쟁력을 강화하고 있으나, SK와의 시너지 부족, 시장 규모 및 성장성에 대한 불확실성, 기술적 한계와 수익 모델의 미비 등 여러 약점이 존재합니다. 이러한 이유로 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 1
+}

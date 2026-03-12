@@ -1,0 +1,15 @@
+{
+  "batch_id": 10,
+  "company_name": "피클플러스",
+  "domain_classification": "구독 상품(디지털 및 실물 상품) 공동구독 플랫폼으로, 사용자 간의 협업을 통해 비용 절감.",
+  "core_technology": "구독 상품(디지털 및 실물 상품) 공동구독 플랫폼으로, 사용자 간의 협업을 통해 비용 절감.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 구독 상품(디지털 및 실물 상품) 공동구독 플랫폼으로, 사용자 간의 협업을 통해 비용 절감.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

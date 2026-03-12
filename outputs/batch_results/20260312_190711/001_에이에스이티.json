@@ -1,0 +1,114 @@
+{
+  "company_name": "에이에스이티",
+  "domain_classification": "배터리",
+  "core_technology": "고에너지 밀도와 향상된 화재 안전성을 갖춘 복합 반/전고체 이차전지 개발 및 양산 기술에 특화되어 있습니다.",
+  "total_score": 53,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "공식적인 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 12,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁이 치열한 시장 환경"
+      ],
+      "reason": "시장 성장성이 있으나 불확실성이 존재함",
+      "evidence": "TAM이 100억 달러 규모로 예상되지만 경쟁이 치열함"
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "기술적 한계로 인한 문제 해결의 불확실성",
+        "고온에서의 내구성 문제"
+      ],
+      "reason": "고객의 pain point는 존재하나 해결 방안이 불확실함",
+      "evidence": "고온에서의 내구성 문제로 인한 기술적 한계"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치의 불명확성"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "ROI 수치가 불명확하여 지불 의사 확인이 어려움"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 다소 미흡",
+        "경쟁사와의 기술적 차별성 부족"
+      ],
+      "reason": "기술적 차별성이 있으나 상용화에 다소 미흡함",
+      "evidence": "TRL 6으로 상용화 단계에 가까우나 경쟁사와의 차별성이 부족"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 불확실성",
+        "특정 고객 의존도"
+      ],
+      "reason": "일부 지역/산업 확장 가능하나 제약이 존재함",
+      "evidence": "특정 고객에 대한 의존도가 높음"
+    },
+    "revenue_model": {
+      "score": 3,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "수익 구조의 불명확성",
+        "매출 발생 미시작"
+      ],
+      "reason": "수익 구조가 명확하지 않음",
+      "evidence": "현재 매출 발생이 이루어지지 않음"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 리스크의 존재",
+        "인허가 절차의 복잡성"
+      ],
+      "reason": "규제 및 인허가 리스크가 존재하나 관리 가능함",
+      "evidence": "인허가 절차가 복잡하여 리스크가 존재함"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험 부족",
+        "핵심 인력 미확보"
+      ],
+      "reason": "창업자와 팀의 경험이 부족함",
+      "evidence": "산업 경험이 부족하여 팀 보강이 필요함"
+    }
+  },
+  "investment_memo": "에이에스이티는 고에너지 밀도와 화재 안전성을 갖춘 복합계 전고체 전해질막 기술을 개발하고 있으나, 기술적 한계와 상용화 단계에서의 불확실성으로 인해 투자하기에는 리스크가 크다. 시장 성장 가능성은 있으나 경쟁이 치열하고, 고객의 지불 의사와 수익 모델이 명확하지 않아 향후 성장이 불투명하다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 1
+}

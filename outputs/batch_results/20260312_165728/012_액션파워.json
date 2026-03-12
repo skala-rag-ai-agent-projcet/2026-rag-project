@@ -1,0 +1,15 @@
+{
+  "batch_id": 12,
+  "company_name": "액션파워",
+  "domain_classification": "스포츠 및 피트니스 관련 제품을 제공하며, 건강한 라이프스타일을 지원하는 스타트업.",
+  "core_technology": "스포츠 및 피트니스 관련 제품을 제공하며, 건강한 라이프스타일을 지원하는 스타트업.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 스포츠 및 피트니스 관련 제품을 제공하며, 건강한 라이프스타일을 지원하는 스타트업.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

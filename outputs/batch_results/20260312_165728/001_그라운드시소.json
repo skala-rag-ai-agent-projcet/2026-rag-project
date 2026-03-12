@@ -1,0 +1,15 @@
+{
+  "batch_id": 1,
+  "company_name": "그라운드시소",
+  "domain_classification": "미술 전시 플랫폼으로, 혁신적인 미술 전시 경험을 제공하는 스타트업입니다.",
+  "core_technology": "미술 전시 플랫폼으로, 혁신적인 미술 전시 경험을 제공하는 스타트업입니다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 미술 전시 플랫폼으로, 혁신적인 미술 전시 경험을 제공하는 스타트업입니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}
