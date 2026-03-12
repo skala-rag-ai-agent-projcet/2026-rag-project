@@ -6,12 +6,15 @@ from config import LLM_MODEL
 
 def evaluation_check_node(state: dict) -> dict:
     """투자 평가 지표 반영 여부 확인."""
-    profile = state.get("startup_profile", {})
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
     name = profile.get("company_name", "Unknown")
-    criteria_scores = state.get("criteria_scores", {})
-    weighted_score = state.get("weighted_score", 0.0)
-    verdict = state.get("verdict", "hold")
-    memo = state.get("investment_memo", "")
+
+    inv = cs.get("investment_decision", {})
+    criteria_scores = inv.get("criteria_scores", {})
+    weighted_score = inv.get("weighted_score", 0.0)
+    verdict = inv.get("verdict", "hold")
+    memo = inv.get("investment_memo", "")
 
     print(f"\n[평가 검증] {name} 투자 평가 검증 중...")
 
@@ -52,6 +55,11 @@ def evaluation_check_node(state: dict) -> dict:
         print(f"  피드백: {feedback}")
 
     return {
-        "recheck_required": not is_complete,
+        "current_startup": {
+            "score_validation": result,
+        },
+        "working": {
+            "recheck_required": not is_complete,
+        },
         "log": [f"평가 검증: {'통과' if is_complete else '재평가 필요'} — {feedback}"],
     }

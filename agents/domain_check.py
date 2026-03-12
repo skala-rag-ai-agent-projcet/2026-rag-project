@@ -6,7 +6,7 @@ from config import LLM_MODEL
 
 def domain_check_node(state: dict) -> dict:
     """스타트업의 Energy 도메인 해당 여부 판별."""
-    profile = state.get("startup_profile", {})
+    profile = state.get("current_startup", {}).get("company_profile", {})
     company_name = profile.get("company_name", "Unknown")
 
     print(f"\n[도메인 확인] {company_name} — Energy 도메인 여부 확인 중...")
@@ -37,7 +37,9 @@ def domain_check_node(state: dict) -> dict:
     print(f"  사유: {reason}")
 
     return {
-        "domain_fit": is_fit,
-        "domain_fit_reason": reason,
+        "current_startup": {
+            "domain_classification": result,
+            "pipeline_flags": {"domain_check_passed": is_fit},
+        },
         "log": [f"도메인 확인: {'적합' if is_fit else '부적합'} — {reason}"],
     }

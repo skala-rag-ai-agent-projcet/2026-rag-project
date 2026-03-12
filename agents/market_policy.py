@@ -8,7 +8,8 @@ from config import LLM_MODEL
 
 def market_policy_node(state: dict, retriever=None) -> dict:
     """시장 규모, 정책 수혜, 규제 리스크 분석 (Corrective RAG + 웹검색) + policy_violation 판별."""
-    profile = state.get("startup_profile", {})
+    cs = state.get("current_startup", {})
+    profile = cs.get("company_profile", {})
     name = profile.get("company_name", "Unknown")
     domain_class = profile.get("domain_classification", "에너지")
 
@@ -26,12 +27,18 @@ def market_policy_node(state: dict, retriever=None) -> dict:
         max_results=7,
     )
 
+    # 부정적/리스크 검색
+    negative_search_results = web_search(
+        f"{name} {domain_class} 규제위반 시장위축 적자 실패", max_results=5
+    )
+
     llm = ChatOpenAI(model=LLM_MODEL, temperature=0)
     prompt = MARKET_POLICY_PROMPT.format(
         startup_name=name,
         startup_profile=json.dumps(profile, ensure_ascii=False, indent=2),
         rag_context=rag_context,
         search_results=search_results,
+        negative_search_results=negative_search_results,
     )
 
     response = llm.invoke(prompt)
@@ -59,9 +66,14 @@ def market_policy_node(state: dict, retriever=None) -> dict:
     print(f"[시장/정책 분석] {name} 완료")
 
     return {
-        "market_policy_analysis": analysis,
-        "policy_violation": policy_violation,
-        "policy_violation_reason": policy_violation_reason,
+        "current_startup": {
+            "market_policy_analysis": analysis,
+            "pipeline_flags": {"market_policy_done": True},
+        },
+        "working": {
+            "policy_violation": policy_violation,
+            "policy_violation_reason": policy_violation_reason,
+        },
         "sources": [f"시장/정책 분석 웹검색: {name}"] + rag_sources,
         "log": [f"시장/정책 분석 완료: {name}"],
         "rag_grading_log": rag_log,
