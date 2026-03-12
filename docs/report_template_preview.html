@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>투자 보고서 템플릿</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    color: #222;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 50px 60px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    position: relative;
+  }
+
+  /* Top accent bar */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #1a1a2e, #e94560);
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 32px;
+  }
+  .header-left {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+  }
+  .header-right {
+    font-size: 10px;
+    color: #bbb;
+  }
+
+  /* Company title area */
+  .company-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+  .company-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -0.5px;
+  }
+  .company-meta {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }
+  .verdict-badge {
+    background: #e94560;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 8px;
+    white-space: nowrap;
+    margin-top: 4px;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #e94560;
+    margin-top: 5px;
+    border-radius: 2px;
+  }
+
+  /* One-liner */
+  .one-liner {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.7;
+    margin: 14px 0 28px 0;
+  }
+
+  /* Sub section */
+  .sub-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+  }
+
+  /* Bullet items */
+  .bullet-list {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+  .bullet-list li {
+    font-size: 11.5px;
+    color: #444;
+    line-height: 1.6;
+    padding: 4px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .bullet-list li .icon {
+    flex-shrink: 0;
+    font-size: 12px;
+    margin-top: 1px;
+  }
+  .icon-check { color: #2ecc71; }
+  .icon-risk { color: #e94560; }
+
+  /* Score summary box */
+  .score-box {
+    background: #f8f9fb;
+    border: 1px solid #eaedf0;
+    border-radius: 10px;
+    padding: 22px 28px;
+    margin: 28px 0;
+    display: flex;
+    gap: 36px;
+  }
+  .score-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+  }
+  .score-big {
+    font-size: 42px;
+    font-weight: 800;
+    color: #e94560;
+    line-height: 1;
+  }
+  .score-max {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 2px;
+  }
+  .score-pass {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2ecc71;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+  .score-right {
+    flex: 1;
+  }
+
+  /* Score bar rows */
+  .score-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .score-label {
+    font-size: 10px;
+    color: #777;
+    width: 85px;
+    text-align: right;
+    padding-right: 10px;
+    flex-shrink: 0;
+  }
+  .score-bar-bg {
+    flex: 1;
+    height: 10px;
+    background: #e8e8e8;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #e94560, #ff6b8a);
+  }
+  .score-value {
+    font-size: 10px;
+    color: #555;
+    width: 30px;
+    text-align: right;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 24px 0;
+  }
+
+  /* TOC */
+  .toc-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+  .toc-items {
+    font-size: 10px;
+    color: #aaa;
+    line-height: 2;
+  }
+
+  /* Footer */
+  .footer {
+    position: absolute;
+    bottom: 36px;
+    left: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 10px;
+    font-size: 8px;
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">AI 스타트업 투자 평가 보고서</div>
+    <div class="header-right">Energy Domain &middot; 2026</div>
+  </div>
+
+  <!-- Company Block -->
+  <div class="company-block">
+    <div>
+      <div class="company-name">[스타트업명]</div>
+      <div class="company-meta">배터리 &middot; 에너지저장 &nbsp;|&nbsp; Series A &nbsp;|&nbsp; 20XX년 설립</div>
+    </div>
+    <div class="verdict-badge">투자 적합</div>
+  </div>
+
+  <!-- 1. SUMMARY -->
+  <div class="section-title">1. SUMMARY</div>
+  <div class="one-liner">
+    [스타트업명]은 [핵심 기술]을 기반으로 [목표 시장]에서 [핵심 가치]를 제공하는 에너지 스타트업이다.
+  </div>
+
+  <!-- 핵심 투자 포인트 -->
+  <div class="sub-title">핵심 투자 포인트</div>
+  <ul class="bullet-list">
+    <li><span class="icon icon-check">✓</span> 글로벌 ESS 시장 연평균 15% 성장 구간에서 독보적 기술 우위 확보</li>
+    <li><span class="icon icon-check">✓</span> SK에너지 밸류체인 내 직접 편입 가능, 공동사업 시너지 높음</li>
+    <li><span class="icon icon-check">✓</span> 핵심 창업팀의 10년 이상 배터리 산업 경력, 상용화 실적 보유</li>
+  </ul>
+
+  <!-- 핵심 리스크 -->
+  <div class="sub-title">핵심 리스크</div>
+  <ul class="bullet-list">
+    <li><span class="icon icon-risk">▲</span> 양산 단계 미진입, 파일럿 수준에서의 성능 검증만 완료</li>
+    <li><span class="icon icon-risk">▲</span> 중국 CATL 등 대형 경쟁사의 가격 공세 가능성</li>
+  </ul>
+
+  <!-- Score Summary -->
+  <div class="score-box">
+    <div class="score-left">
+      <div class="score-big">78.5</div>
+      <div class="score-max">/ 100</div>
+      <div class="score-pass">▶ PASS</div>
+    </div>
+    <div class="score-right">
+      <div class="score-row">
+        <div class="score-label">시장규모 17%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div>
+        <div class="score-value">80</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">SK시너지 15%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:75%"></div></div>
+        <div class="score-value">75</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">기술차별성 14%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:85%"></div></div>
+        <div class="score-value">85</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">창업자·팀 12%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:70%"></div></div>
+        <div class="score-value">70</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">문제해결력 10%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:82%"></div></div>
+        <div class="score-value">82</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">확장성 10%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:78%"></div></div>
+        <div class="score-value">78</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">지불의사 8%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:72%"></div></div>
+        <div class="score-value">72</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">수익모델 8%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:68%"></div></div>
+        <div class="score-value">68</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">규제리스크 6%</div>
+        <div class="score-bar-bg"><div class="score-bar-fill" style="width:75%"></div></div>
+        <div class="score-value">75</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <hr class="divider">
+  <div class="toc-title">목차</div>
+  <div class="toc-items">
+    2. Company &amp; Business &nbsp;&middot;&nbsp;
+    3. Technology &amp; Product &nbsp;&middot;&nbsp;
+    4. Market &amp; Commercialization &nbsp;&middot;&nbsp;
+    5. Team &amp; Execution<br>
+    6. Risks &amp; Limitations &nbsp;&middot;&nbsp;
+    7. Investment Decision &nbsp;&middot;&nbsp;
+    8. Reference
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>Confidential &middot; AI Startup Investment Agent &middot; Energy Domain</span>
+    <span>Page 1</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+
+LLM_MODEL = "gpt-4o-mini"
+EMBEDDING_MODEL = "BAAI/bge-m3"
+
+FAISS_INDEX_PATH = os.path.join(os.path.dirname(__file__), "data", "faiss_index")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "outputs")
+
+INVESTMENT_THRESHOLD = 70.0
+
+DOMAIN = "Energy"
+DOMAIN_DETAIL = "Energy Transition / Next-Gen Energy Infrastructure (배터리·ESS 중심)"
+
+# 9개 투자 판단 기준 (가중합 = 100%)
+EVALUATION_CRITERIA = {
+    "sk_synergy": {
+        "name": "SK 사업 시너지",
+        "weight": 0.15,
+        "source": "SK 공식 전략자료 + 과제 목적 반영 커스텀",
+        "points": "배터리, LNG, 전력, 에너지솔루션, 소재 밸류체인과의 연결성 / 기존 계열사와 공동사업 가능성 / 기술 내재화 가능성 / 전략적 확장성",
+    },
+    "market_size_growth": {
+        "name": "시장 규모·성장성",
+        "weight": 0.17,
+        "source": "Bessemer + Scorecard Method",
+        "points": "TAM/SAM/SOM 규모 / 글로벌 확장 가능성 / 에너지 전환·정책 변화에 따른 성장성 / 대형 사업으로 발전 가능성",
+    },
+    "problem_solving": {
+        "name": "문제 해결력 / 고객 가치",
+        "weight": 0.10,
+        "source": "Bessemer Checklist",
+        "points": "고객 pain point의 명확성 / 기존 방식 대비 개선 정도 / 필수성 / 도입 필요성",
+    },
+    "willingness_to_pay": {
+        "name": "고객 지불 의사",
+        "weight": 0.08,
+        "source": "Bessemer Checklist",
+        "points": "비용 절감, 효율 향상, 규제 대응, 생산성 향상 등 ROI / 유료 PoC·계약 여부 / 지불 전환 가능성",
+    },
+    "tech_differentiation": {
+        "name": "기술 차별성·상용화 수준",
+        "weight": 0.14,
+        "source": "Bessemer + Scorecard Method",
+        "points": "성능·효율·안정성·가격 우위 / PoC·파일럿·상용화 단계 / 기술 신뢰성 / 모방 난이도 / 특허·노하우",
+    },
+    "scalability": {
+        "name": "확장성 / 업사이드",
+        "weight": 0.10,
+        "source": "Bessemer Checklist",
+        "points": "지역 확장성 / 산업 확장성 / 플랫폼화 가능성 / 장기 성장 잠재력 / 특정 고객 의존도",
+    },
+    "revenue_model": {
+        "name": "수익모델·단위경제성",
+        "weight": 0.08,
+        "source": "Bessemer + 일반 VC 실사",
+        "points": "매출 구조의 명확성 / 반복매출 여부 / 매출총이익률 / 회수기간 / 설치·운영 단위당 채산성",
+    },
+    "risk": {
+        "name": "규제·운영·법률 리스크",
+        "weight": 0.06,
+        "source": "Bessemer Checklist",
+        "points": "인허가·인증 필요성 / 안전 규제 / 공급망 리스크 / 운영 복잡도 / 법적 분쟁 가능성 / 대체기술 리스크",
+    },
+    "founder_team": {
+        "name": "창업자·팀의 질 / 장기 몰입도",
+        "weight": 0.12,
+        "source": "Bessemer + Scorecard Method",
+        "points": "산업 전문성 / 기술·사업 균형 / 실행력 / 핵심 인력 구성 / 장기 비전 / 몰입 의지",
+    },
+}
+
+# Batch mode: 항목별 만점 (weight * 100)
+EVALUATION_MAX_SCORES = {key: int(info["weight"] * 100) for key, info in EVALUATION_CRITERIA.items()}
+
+# Batch mode: 도메인 부적합 비율 임계값 (초과 시 쿼리 재작성 + 재탐색)
+BATCH_DOMAIN_REJECTION_THRESHOLD = 0.5
