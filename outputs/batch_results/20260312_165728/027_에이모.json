@@ -1,0 +1,15 @@
+{
+  "batch_id": 27,
+  "company_name": "에이모",
+  "domain_classification": "AI 학습 데이터 구축 플랫폼을 통해 고품질 데이터세트를 제공하는 기업.",
+  "core_technology": "AI 학습 데이터 구축 플랫폼을 통해 고품질 데이터세트를 제공하는 기업.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 학습 데이터 구축 플랫폼을 통해 고품질 데이터세트를 제공하는 기업.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

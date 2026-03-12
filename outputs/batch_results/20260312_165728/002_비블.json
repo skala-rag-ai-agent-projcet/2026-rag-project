@@ -1,0 +1,15 @@
+{
+  "batch_id": 2,
+  "company_name": "비블",
+  "domain_classification": "AI 기반 콘텐츠 제작을 혁신하는 가상 스튜디오로, 미국 AI 전문 투자사로부터 투자를 유치했습니다.",
+  "core_technology": "AI 기반 콘텐츠 제작을 혁신하는 가상 스튜디오로, 미국 AI 전문 투자사로부터 투자를 유치했습니다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 기반 콘텐츠 제작을 혁신하는 가상 스튜디오로, 미국 AI 전문 투자사로부터 투자를 유치했습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

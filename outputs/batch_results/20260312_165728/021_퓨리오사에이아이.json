@@ -1,0 +1,15 @@
+{
+  "batch_id": 21,
+  "company_name": "퓨리오사에이아이",
+  "domain_classification": "AI 반도체 기술을 개발하여 인공지능 연산의 효율성을 높이는 스타트업이다.",
+  "core_technology": "AI 반도체 기술을 개발하여 인공지능 연산의 효율성을 높이는 스타트업이다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 반도체 기술을 개발하여 인공지능 연산의 효율성을 높이는 스타트업이다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

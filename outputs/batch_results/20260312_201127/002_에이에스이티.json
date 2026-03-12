@@ -1,0 +1,114 @@
+{
+  "company_name": "에이에스이티",
+  "domain_classification": "배터리",
+  "core_technology": "에이에스이티는 고에너지 밀도와 향상된 화재 안전성을 갖춘 복합 반/전고체 이차전지 개발 및 양산 기술에 특화되어 있습니다. 이 회사는 산화물-고분자 복합 고체 전해질 및 음극 씨드 부품 등 차세대 복합 이차전지의 핵심 기술 내재화에 주력하고 있습니다.",
+  "total_score": 51,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "현재 SK와의 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁 심화로 인한 시장 점유율 확보의 어려움"
+      ],
+      "reason": "시장 성장 가능성은 있으나 불확실성이 존재함",
+      "evidence": "전고체 배터리 시장의 성장률은 높지만, 초기 시장 점유율 확보가 어려움"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안이 존재하여 경쟁력이 제한적"
+      ],
+      "reason": "고객의 문제 해결이 명확하지 않음",
+      "evidence": "기존 리튬이온 배터리와의 호환성 문제"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치의 명확한 제시 부족"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "고객의 지불 의사에 대한 구체적인 사례 부족"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 대한 불확실성",
+        "대량 생산 시 공정 안정성 문제"
+      ],
+      "reason": "기술 차별성이 있으나 상용화에 대한 불확실성이 존재함",
+      "evidence": "현재 파일럿 단계에서 상용화 준비 중"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 불확실성",
+        "특정 산업에 의존하는 구조"
+      ],
+      "reason": "확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 고객군에 의존하는 구조"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 초기 단계",
+        "반복 매출 구조의 검증 부족"
+      ],
+      "reason": "수익 모델이 초기 단계에 있어 불확실성이 존재함",
+      "evidence": "현재 매출 발생이 미비함"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성",
+        "공급망 안정성 문제"
+      ],
+      "reason": "규제 및 운영 리스크가 존재함",
+      "evidence": "전고체 배터리 기술에 대한 규제가 명확하지 않음"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 부족한 팀원 존재",
+        "핵심 인력의 확보가 불확실"
+      ],
+      "reason": "팀의 경험이 부족하여 성공 가능성에 의문이 있음",
+      "evidence": "창업자의 산업 경험이 제한적임"
+    }
+  },
+  "investment_memo": "에이에스이티는 전고체 배터리 기술을 개발하고 있으나, 시장 내 경쟁 심화와 기술 상용화에 대한 불확실성으로 인해 투자 리스크가 큽니다. 고객의 지불 의사와 문제 해결력이 명확하지 않으며, SK와의 시너지 또한 부족하여 현재로서는 투자를 보류하는 것이 바람직합니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 2
+}

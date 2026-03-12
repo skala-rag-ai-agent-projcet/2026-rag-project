@@ -1,0 +1,69 @@
+{
+  "batch_id": 1,
+  "company_name": "플러그링크",
+  "domain_classification": "전기차 충전",
+  "core_technology": "플러그링크는 블루투스 기반의 PnC 충전 서비스와 스마트 차징 전력 관리 기술을 활용하여 전기차 충전 인프라를 제공합니다.",
+  "total_score": 83,
+  "verdict": "invest",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 12,
+      "max_score": 15,
+      "reason": "플러그링크의 충전 인프라와 SK의 배터리 및 전력 사업 간의 시너지가 기대됨.",
+      "evidence": "SK온과의 협력을 통해 전기차 배터리 충전 솔루션을 통합할 수 있는 가능성이 있음."
+    },
+    "market_size_growth": {
+      "score": 15,
+      "max_score": 17,
+      "reason": "전기차 충전 시장의 급성장과 플러그링크의 시장 점유율 확대 목표가 긍정적.",
+      "evidence": "2025년까지 한국 전기차 충전 시장의 SAM이 약 10조 원으로 예상됨."
+    },
+    "problem_solving": {
+      "score": 9,
+      "max_score": 10,
+      "reason": "전기차 충전의 접근성과 효율성을 개선하여 고객의 pain point를 해결.",
+      "evidence": "블루투스 기반 PnC 충전 서비스로 사용자 편의성을 높임."
+    },
+    "willingness_to_pay": {
+      "score": 7,
+      "max_score": 8,
+      "reason": "고객들이 충전 비용 절감과 효율성을 기대하며 지불 의사가 높음.",
+      "evidence": "전기차 소유자와 기업 고객의 충전 서비스에 대한 높은 지불 의사."
+    },
+    "tech_differentiation": {
+      "score": 11,
+      "max_score": 14,
+      "reason": "블루투스 기반 PnC 충전 서비스와 스마트 차징 기술의 차별성이 있음.",
+      "evidence": "특허 보유 및 3만5219기의 충전기 운영으로 기술 신뢰성 확보."
+    },
+    "scalability": {
+      "score": 8,
+      "max_score": 10,
+      "reason": "전국적으로 충전 인프라를 확장할 수 있는 가능성이 높음.",
+      "evidence": "2025년까지 완속 전기차 충전기 설치 대수 기준 국내 1위를 목표로 함."
+    },
+    "revenue_model": {
+      "score": 7,
+      "max_score": 8,
+      "reason": "다양한 수익 모델을 통해 반복 매출 가능성이 높음.",
+      "evidence": "전기차 충전기 시스템 판매 및 B2B 솔루션 제공."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "reason": "기술 표준화 부족과 V2G 기술 도입 시 안정성 문제가 리스크로 작용할 수 있음.",
+      "evidence": "충전기와 전력망 연계를 위한 기술 표준화 필요."
+    },
+    "founder_team": {
+      "score": 10,
+      "max_score": 12,
+      "reason": "CEO 강인철의 산업 전문성과 팀의 실행력이 긍정적.",
+      "evidence": "기술적 노하우와 고객 중심의 서비스 제공을 위한 팀 구성."
+    }
+  },
+  "investment_memo": "플러그링크는 전기차 충전 시장에서 빠르게 성장할 수 있는 기회를 가지고 있으며, SK그룹의 배터리 및 전력 사업과의 시너지가 기대됩니다. 블루투스 기반의 혁신적인 충전 서비스와 스마트 차징 기술로 사용자 편의성을 극대화하고 있으며, 정부의 정책적 지원을 통해 사업 확장이 가능할 것으로 보입니다. 그러나 기술 표준화와 안정성 문제는 향후 도전 과제가 될 수 있습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7
+}

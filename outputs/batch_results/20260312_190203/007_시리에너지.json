@@ -1,0 +1,114 @@
+{
+  "company_name": "시리에너지",
+  "domain_classification": "배터리",
+  "core_technology": "차세대 실리콘 복합 음극재를 개발하며, 리튬 금속 전극을 초박판 및 구조화된 형태로 제작하는 기술을 보유하고 있습니다. 이 기술은 리튬 덴드라이트와 대면적화 문제를 해결하여 고에너지밀도와 긴 수명을 제공합니다.",
+  "total_score": 56,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "시리에너지는 SK와의 공식적인 협력 관계가 없음."
+    },
+    "market_size_growth": {
+      "score": 12,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM 수치의 불확실성",
+        "경쟁이 치열한 시장에서의 불확실성"
+      ],
+      "reason": "시장 규모는 크지만, 경쟁이 치열하고 불확실성이 존재함",
+      "evidence": "글로벌 리튬이온 배터리 시장은 성장 중이나, 시리에너지가 타겟으로 하는 시장의 TAM 수치가 불확실함."
+    },
+    "problem_solving": {
+      "score": 6,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "리튬 덴드라이트 문제 해결의 완벽성 부족",
+        "기술적 한계로 인한 고객의 즉각적인 필요 충족 어려움"
+      ],
+      "reason": "고객의 pain point는 존재하나, 해결의 완벽성이 부족함",
+      "evidence": "리튬 덴드라이트 문제 해결이 완벽하게 이루어지지 않을 경우 안전성에 대한 우려가 존재."
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사 검증 부족",
+        "ROI 수치의 명확성 부족"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "고객 맞춤형 솔루션 제공을 통해 추가적인 수익을 창출할 수 있으나, 구체적인 사례가 부족함."
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 5로 상용화에 대한 불확실성",
+        "경쟁사 대비 차별성의 명확성 부족"
+      ],
+      "reason": "기술은 차별적이나 상용화에 대한 불확실성이 존재함",
+      "evidence": "TRL 5에 해당하는 기술 성숙도를 나타내지만, 대량 생산에 대한 도전이 남아 있음."
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "대량 생산 및 대면적화에 대한 도전",
+        "특정 고객/산업 의존 가능성"
+      ],
+      "reason": "일부 지역/산업 확장이 가능하나 제약이 존재함",
+      "evidence": "대면적화 및 대량 생산에 대한 기술적 도전이 있음."
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "매출 발생이 초기 단계",
+        "수익 구조의 명확성 부족"
+      ],
+      "reason": "수익 구조가 명확하지 않음",
+      "evidence": "현재 파일럿 단계에서 매출 발생이 초기 단계에 있음."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성",
+        "공급망의 불확실성"
+      ],
+      "reason": "리스크가 관리 가능하나 일부 불확실성이 존재함",
+      "evidence": "전해액 및 화학 물질 관련 안전 규제와 환경 규제가 존재하나, 시리에너지는 이를 준수할 수 있는 기술적 역량을 보유하고 있음."
+    },
+    "founder_team": {
+      "score": 7,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험의 깊이 부족",
+        "핵심 인력의 확실성 부족"
+      ],
+      "reason": "창업자와 팀의 경험이 부족함",
+      "evidence": "정경진 CEO의 경력에 대한 구체적인 정보가 부족함."
+    }
+  },
+  "investment_memo": "시리에너지는 차세대 배터리 음극 솔루션을 개발하는 스타트업으로, 기술적 차별성과 시장 성장 가능성을 보유하고 있으나, 상용화에 대한 불확실성과 고객의 지불 의사 검증 부족으로 인해 투자 판단이 부정적입니다. 대기업과의 경쟁 및 규제 준수 등의 도전 과제가 존재하며, 초기 매출 발생이 미비하여 리스크가 큽니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 7
+}

@@ -1,0 +1,114 @@
+{
+  "company_name": "액트이온배터리테크놀로지스",
+  "domain_classification": "배터리",
+  "core_technology": "액트이온의 핵심 기술은 지속적인 공정을 통해 리튬 이온 배터리용 단결정 코팅된 양극 활성 물질(CAM)을 생산하는 혁신적인 제조 공정입니다.",
+  "total_score": 51,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "공식적인 협력 관계가 없음"
+    },
+    "market_size_growth": {
+      "score": 10,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치의 구체적 근거 부족",
+        "시장 성장성에 대한 불확실성"
+      ],
+      "reason": "리튬 이온 배터리 시장의 성장 가능성은 있으나 구체적인 수치가 부족함",
+      "evidence": "TAM/SAM 수치 미제공"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안이 존재하여 경쟁력이 약함"
+      ],
+      "reason": "고객이 직면한 문제의 시급성이 낮음",
+      "evidence": "기존 기술과의 비교에서 개선 폭이 제한적임"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 검증 부족",
+        "ROI 수치 미제공"
+      ],
+      "reason": "고객의 지불 의사가 명확히 검증되지 않음",
+      "evidence": "유료 PoC 사례 미비"
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "TRL 6으로 상용화에 미흡",
+        "기술적 차별성이 명확하지 않음"
+      ],
+      "reason": "기술이 상용화 단계에 있으나 경쟁사 대비 우위가 불분명함",
+      "evidence": "기술적 차별성에 대한 구체적 수치 미제공"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "생산 공정의 확장성에 대한 불확실성",
+        "특정 고객/지역 의존 가능성"
+      ],
+      "reason": "사업 확장 가능성은 있으나 제약이 존재함",
+      "evidence": "대량 생산의 확장성에 대한 우려"
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "수익 구조가 초기 단계에 있음",
+        "반복 매출 구조 미비"
+      ],
+      "reason": "수익 모델이 명확하지 않음",
+      "evidence": "파일럿 단계에서 매출 발생 미비"
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 준수에 대한 불확실성",
+        "공급망 안정성에 대한 우려"
+      ],
+      "reason": "규제 및 운영 리스크가 존재하나 관리 가능함",
+      "evidence": "인허가 진행 중"
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "산업 경험이 상대적으로 짧음",
+        "핵심 인력의 전문성 부족"
+      ],
+      "reason": "창업자와 팀의 경험이 부족하여 성공 가능성에 의문",
+      "evidence": "산업 경험이 10년 미만"
+    }
+  },
+  "investment_memo": "액트이온배터리테크놀로지스는 리튬 이온 배터리용 단결정 양극 활성 물질을 생산하는 혁신적인 기술을 보유하고 있으나, SK와의 시너지 부족, 시장 성장성에 대한 불확실성, 고객의 지불 의사 검증 부족 등 여러 리스크가 존재합니다. 기술 상용화 단계에서의 불확실성과 초기 투자 비용이 높은 점도 우려됩니다. 따라서 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 4
+}

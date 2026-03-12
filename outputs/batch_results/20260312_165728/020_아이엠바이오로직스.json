@@ -1,0 +1,15 @@
+{
+  "batch_id": 20,
+  "company_name": "아이엠바이오로직스",
+  "domain_classification": "면역항암항체를 개발하여 암 치료에 기여하는 바이오 스타트업이다.",
+  "core_technology": "면역항암항체를 개발하여 암 치료에 기여하는 바이오 스타트업이다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 면역항암항체를 개발하여 암 치료에 기여하는 바이오 스타트업이다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

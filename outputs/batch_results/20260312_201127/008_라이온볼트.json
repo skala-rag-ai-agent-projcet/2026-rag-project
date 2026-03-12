@@ -1,0 +1,114 @@
+{
+  "company_name": "라이온볼트",
+  "domain_classification": "배터리",
+  "core_technology": "고성능, 빠른 충전, 본질적 안전성을 갖춘 지속 가능한 3D 전고체 배터리 기술을 개발하고 있습니다.",
+  "total_score": 42,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 5,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십이나 협력 사례가 없음",
+        "기술 내재화에 대한 구체적인 계획 부족"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "라이온볼트의 기술이 SK의 기존 사업과 직접적으로 연결되지 않음"
+    },
+    "market_size_growth": {
+      "score": 8,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치가 구체적이지 않음",
+        "시장 성장성에 대한 불확실성 존재"
+      ],
+      "reason": "전고체 배터리 시장의 성장 가능성은 있으나 구체적인 수치가 부족함",
+      "evidence": "유럽 시장에서의 전고체 배터리 수요는 증가할 것으로 예상되나, 구체적인 수치 미제공"
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하게 정의되지 않음",
+        "기존 대안이 존재하여 경쟁력이 약함"
+      ],
+      "reason": "고객의 문제를 해결하는 데 있어 명확한 가치 제안이 부족함",
+      "evidence": "기존 리튬이온 배터리와의 비교에서 차별성이 부족함"
+    },
+    "willingness_to_pay": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적인 사례 부족",
+        "ROI 수치가 검증되지 않음"
+      ],
+      "reason": "고객이 실제로 지불할 의사가 있는지에 대한 검증이 부족함",
+      "evidence": "프리미엄 가격을 지불할 의사가 높다고 하나, 구체적인 사례 미제공"
+    },
+    "tech_differentiation": {
+      "score": 5,
+      "max_score": 14,
+      "level": "Low",
+      "weakness": [
+        "TRL이 4로 상용화에 미치지 못함",
+        "특허 및 기술적 차별성이 부족함"
+      ],
+      "reason": "기술이 상용화 단계에 도달하지 못하고 있으며, 경쟁사 대비 차별성이 부족함",
+      "evidence": "TRL 4로 상용화에 필요한 추가 연구와 개발이 필요함"
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적인 전략 부족",
+        "특정 지역/산업에 의존할 가능성 존재"
+      ],
+      "reason": "확장 가능성은 있으나 구체적인 전략이 부족함",
+      "evidence": "특정 고객 및 지역에 의존할 가능성이 있음"
+    },
+    "revenue_model": {
+      "score": 3,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "수익 구조가 명확하지 않음",
+        "실제 매출 발생 사례가 없음"
+      ],
+      "reason": "수익 모델이 불명확하고 매출 발생이 이루어지지 않음",
+      "evidence": "파일럿 단계에 있으며, 매출 발생 사례가 없음"
+    },
+    "risk": {
+      "score": 3,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 및 인허가 리스크가 존재",
+        "공급망 안정성에 대한 우려가 있음"
+      ],
+      "reason": "규제 리스크가 존재하나 관리 가능한 수준",
+      "evidence": "인허가 진행 중이나 불확실성 존재"
+    },
+    "founder_team": {
+      "score": 4,
+      "max_score": 12,
+      "level": "Low",
+      "weakness": [
+        "창업자의 산업 경험이 부족함",
+        "핵심 인력의 전문성이 미흡함"
+      ],
+      "reason": "창업자와 팀의 경험이 부족하여 사업 성공 가능성이 낮음",
+      "evidence": "산업 경험이 부족하고 핵심 인력이 미확보됨"
+    }
+  },
+  "investment_memo": "라이온볼트는 지속 가능한 3D 전고체 배터리 기술을 개발하고 있으나, 기술 상용화에 필요한 추가 연구와 개발이 필요합니다. 높은 제조 비용과 기술적 한계, 그리고 시장에서의 경쟁력 부족으로 인해 초기 시장 점유율 확보에 어려움이 예상됩니다. 따라서 현재로서는 투자가 적절하지 않다고 판단됩니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 6,
+  "batch_id": 8
+}

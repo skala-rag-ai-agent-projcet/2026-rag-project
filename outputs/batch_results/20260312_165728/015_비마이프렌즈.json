@@ -1,0 +1,15 @@
+{
+  "batch_id": 15,
+  "company_name": "비마이프렌즈",
+  "domain_classification": "글로벌 팬덤 솔루션을 제공하는 플랫폼으로, 팬과 아티스트 간의 소통을 강화.",
+  "core_technology": "글로벌 팬덤 솔루션을 제공하는 플랫폼으로, 팬과 아티스트 간의 소통을 강화.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 글로벌 팬덤 솔루션을 제공하는 플랫폼으로, 팬과 아티스트 간의 소통을 강화.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

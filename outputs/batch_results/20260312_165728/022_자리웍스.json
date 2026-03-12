@@ -1,0 +1,15 @@
+{
+  "batch_id": 22,
+  "company_name": "자리웍스",
+  "domain_classification": "온다라는 플랫폼을 통해 공간 예약 및 관리 솔루션을 제공하는 스타트업이다.",
+  "core_technology": "온다라는 플랫폼을 통해 공간 예약 및 관리 솔루션을 제공하는 스타트업이다.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 온다라는 플랫폼을 통해 공간 예약 및 관리 솔루션을 제공하는 스타트업이다.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

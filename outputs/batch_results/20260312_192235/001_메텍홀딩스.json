@@ -1,0 +1,15 @@
+{
+  "batch_id": 1,
+  "company_name": "메텍홀딩스",
+  "domain_classification": "소의 위에 직접 삽입하여 메탄 농도와 배출량을 실시간으로 측정하는 온실가스 배출 측정 캡슐을 제공.",
+  "core_technology": "소의 위에 직접 삽입하여 메탄 농도와 배출량을 실시간으로 측정하는 온실가스 배출 측정 캡슐을 제공.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 소의 위에 직접 삽입하여 메탄 농도와 배출량을 실시간으로 측정하는 온실가스 배출 측정 캡슐을 제공.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

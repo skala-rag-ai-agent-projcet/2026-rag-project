@@ -1,0 +1,114 @@
+{
+  "company_name": "휴네이트",
+  "domain_classification": "ESS, 배터리 관리 시스템",
+  "core_technology": "휴네이트는 배터리 관리 시스템(BMS)과 IoT 기술을 결합하여 배터리의 안전성과 효율성을 극대화하는 솔루션을 제공합니다.",
+  "total_score": 55,
+  "verdict": "reject",
+  "criteria_scores": {
+    "sk_synergy": {
+      "score": 6,
+      "max_score": 15,
+      "level": "Low",
+      "weakness": [
+        "SK와의 공식 파트너십 부재",
+        "기술 내재화에 대한 불확실성"
+      ],
+      "reason": "SK 에너지 밸류체인과의 직접적인 연결성이 부족함",
+      "evidence": "휴네이트는 SK이노베이션과 협력하고 있으나 공식적인 파트너십이 없음."
+    },
+    "market_size_growth": {
+      "score": 12,
+      "max_score": 17,
+      "level": "Medium",
+      "weakness": [
+        "TAM/SAM 수치의 구체적 확인 부족",
+        "경쟁 심화로 인한 성장 불확실성"
+      ],
+      "reason": "ESS 시장의 성장 가능성은 있으나 구체적인 수치가 부족함",
+      "evidence": "한국의 ESS 시장은 2025년까지 약 5조 원 규모로 성장할 것으로 예상됨."
+    },
+    "problem_solving": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "고객의 pain point가 명확하지 않음",
+        "기존 대안이 존재하여 개선 폭이 제한적"
+      ],
+      "reason": "고객이 직면한 문제를 해결하는 데 있어 명확성이 부족함",
+      "evidence": "기존 BMS 솔루션과의 차별성이 불명확함."
+    },
+    "willingness_to_pay": {
+      "score": 5,
+      "max_score": 8,
+      "level": "Medium",
+      "weakness": [
+        "고객의 지불 의사에 대한 구체적 사례 부족",
+        "ROI 수치의 검증이 필요"
+      ],
+      "reason": "고객의 지불 의사가 확인되지 않음",
+      "evidence": "고객들이 BMS에 대해 높은 지불 의사를 보이고 있으나 구체적 사례가 부족함."
+    },
+    "tech_differentiation": {
+      "score": 8,
+      "max_score": 14,
+      "level": "Medium",
+      "weakness": [
+        "기술적 차별성이 다소 불명확함",
+        "경쟁사 대비 성능 우위가 명확하지 않음"
+      ],
+      "reason": "기술이 상용화 단계에 있으나 차별성이 부족함",
+      "evidence": "TRL 6으로 상용화 단계에 있으나 경쟁사와의 성능 비교가 필요함."
+    },
+    "scalability": {
+      "score": 5,
+      "max_score": 10,
+      "level": "Medium",
+      "weakness": [
+        "글로벌 확장 가능성에 대한 구체적 계획 부족",
+        "특정 산업에 의존하는 구조"
+      ],
+      "reason": "확장 가능성은 있으나 제약이 존재함",
+      "evidence": "특정 고객군에 의존하고 있어 확장성이 제한적임."
+    },
+    "revenue_model": {
+      "score": 4,
+      "max_score": 8,
+      "level": "Low",
+      "weakness": [
+        "수익 구조가 명확하지 않음",
+        "반복 매출 구조의 검증이 필요"
+      ],
+      "reason": "수익 모델이 불명확하여 리스크가 존재함",
+      "evidence": "유지보수 및 데이터 분석 서비스로 반복 매출을 창출할 수 있는 구조이나 검증이 필요함."
+    },
+    "risk": {
+      "score": 4,
+      "max_score": 6,
+      "level": "Medium",
+      "weakness": [
+        "규제 리스크에 대한 관리 방안 부족",
+        "공급망 안정성에 대한 불확실성"
+      ],
+      "reason": "규제 리스크가 존재하나 관리 가능성이 있음",
+      "evidence": "ESS 관련 안전 규제와 환경 규제를 준수할 수 있는 기술적 기반을 갖추고 있음."
+    },
+    "founder_team": {
+      "score": 6,
+      "max_score": 12,
+      "level": "Medium",
+      "weakness": [
+        "창업자의 산업 경험이 부족함",
+        "핵심 인력의 확보가 미비함"
+      ],
+      "reason": "팀의 역량이 부족하여 성공 가능성이 낮음",
+      "evidence": "창업자의 경력에 대한 정보가 부족함."
+    }
+  },
+  "investment_memo": "휴네이트는 ESS 배터리 관리 시스템 분야에서 기술력과 혁신성을 바탕으로 시장에서의 입지를 강화하고 있으나, SK와의 공식 파트너십 부재, 시장 성장성에 대한 불확실성, 고객의 지불 의사에 대한 구체적 사례 부족 등 여러 약점이 존재합니다. 이러한 이유로 현재로서는 투자를 권장하지 않습니다.",
+  "policy_violation": false,
+  "policy_violation_reason": "해당 없음",
+  "competitor_analyzed": true,
+  "competitiveness_score": 7,
+  "batch_id": 9
+}

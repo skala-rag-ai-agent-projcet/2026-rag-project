@@ -1,0 +1,15 @@
+{
+  "batch_id": 2,
+  "company_name": "엠유트론",
+  "domain_classification": "원자력 발전소의 주요 부품 교체 및 보수를 위한 전용 장비를 개발하는 스타트업.",
+  "core_technology": "원자력 발전소의 주요 부품 교체 및 보수를 위한 전용 장비를 개발하는 스타트업.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: 원자력 발전소의 주요 부품 교체 및 보수를 위한 전용 장비를 개발하는 스타트업.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}

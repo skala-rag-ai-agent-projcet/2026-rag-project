@@ -1,0 +1,15 @@
+{
+  "batch_id": 28,
+  "company_name": "스트라드비젼",
+  "domain_classification": "AI 기반 영상 인식 소프트웨어 'SVNet'을 개발하여 자율주행 및 ADAS 기술에 적용하는 스타트업.",
+  "core_technology": "AI 기반 영상 인식 소프트웨어 'SVNet'을 개발하여 자율주행 및 ADAS 기술에 적용하는 스타트업.",
+  "total_score": 0,
+  "verdict": "reject",
+  "criteria_scores": {},
+  "investment_memo": "Energy 도메인 부적합으로 기각. 사업 내용: AI 기반 영상 인식 소프트웨어 'SVNet'을 개발하여 자율주행 및 ADAS 기술에 적용하는 스타트업.",
+  "policy_violation": false,
+  "policy_violation_reason": "",
+  "competitor_analyzed": false,
+  "competitiveness_score": null,
+  "reject_reason": "domain_mismatch"
+}
