@@ -75,23 +75,18 @@
 - **Top-5 Jaccard 겹침**: 평균 0.50 — 두 모델이 절반은 같은 문서를 가져오지만, 나머지 절반에서 bge-m3이 더 관련성 높은 문서를 검색
 - **결론**: 한국어 파인튜닝 모델이 반드시 유리하지 않음. 도메인 문서가 한영 혼합이라 다국어 범용 모델이 더 적합 → **BAAI/bge-m3 채택**
 
-<!-- 📸 사진: 임베딩 비교 종합 테이블 -->
-<!-- 경로: outputs/embedding_comparison/summary_table.png -->
+<img width="1801" height="586" alt="summary_table" src="https://github.com/user-attachments/assets/9f676d06-99ae-441f-9de1-12f085ab33c5" />
 
-<!-- 📸 사진: 유사도 바 차트 (쿼리별 평균 코사인 유사도 비교) -->
-<!-- 경로: outputs/embedding_comparison/similarity_bar_chart.png -->
+<img width="2100" height="900" alt="similarity_bar_chart" src="https://github.com/user-attachments/assets/98df6f74-9f21-43e0-ac42-6907e3d50d0c" />
 
-<!-- 📸 사진: 유사도 박스플롯 (모델별 분포) -->
-<!-- 경로: outputs/embedding_comparison/similarity_box_plot.png -->
+<img width="1200" height="900" alt="similarity_box_plot" src="https://github.com/user-attachments/assets/f8c086ac-298c-4b30-bdcc-0af4caf56be2" />
 
-<!-- 📸 사진: LLM Judge 관련성 히트맵 (쿼리×모델 관련성 0-2점) -->
-<!-- 경로: outputs/embedding_comparison/relevance_heatmap.png -->
+<img width="900" height="1500" alt="relevance_heatmap" src="https://github.com/user-attachments/assets/beb0fb82-fcfd-4f20-8e2f-3653085910fe" />
 
-<!-- 📸 사진: 카테고리별 레이더 차트 (tech/market/competitor) -->
-<!-- 경로: outputs/embedding_comparison/radar_chart.png -->
+<img width="1962" height="925" alt="radar_chart" src="https://github.com/user-attachments/assets/d0733f9c-f4d0-4390-bdf8-5c9d5fbeb54c" />
 
-<!-- 📸 사진: Top-5 Jaccard 겹침도 -->
-<!-- 경로: outputs/embedding_comparison/overlap_bar_chart.png -->
+<img width="1800" height="750" alt="overlap_bar_chart" src="https://github.com/user-attachments/assets/8d5fb945-563b-46e7-92c3-37308e4a5ee6" />
+
 
 ---
 
@@ -111,44 +106,14 @@
 
 ### 파이프라인 흐름
 
-```
-[Batch Startup Processing]
-         ↓
-[스타트업 탐색 에이전트] ←------ no: 쿼리 재작성 후 재탐색 (max 1)
-         ↓
-    ◇ 도메인 확인 ◇
-    │           │
-   yes         no → target domain 기업만 전달
-    ↓
-┌───────────────────┐
-│ [기술 분석]  [시장 및 정책 분석] │  ← 병렬 실행 + Corrective RAG
-└─────────┬─────────┘
-          ↓
-  결과 형식 통합 로직
-          ↓
-  [경쟁사 분석 에이전트] ←------ 검증 실패시 재시도 (max 1)
-          ↓
-  ┌─────────────────────────────────┐
-  │     투자 판단 입력 검증            │
-  │  기술/시장/경쟁사 분석 완료 여부     │
-  │  필수 필드 누락 여부 확인           │
-  └──────────┬──────────────────────┘
-             ↓
-  [투자 판단 에이전트]
-          ↓          ←------ no: 평가 지표 미반영 시 재평가
-  ◇ 투자 평가 지표 반영 여부 확인 ◇
-          ↓ yes
-    [최종 결과 집계]
-          ↓
-  [보고서 생성 에이전트]
-```
+<img width="3004" height="4084" alt="싱글 모드" src="https://github.com/user-attachments/assets/e9483137-ef6a-4fe0-b027-6f727d03b674" />
+<img width="2884" height="5140" alt="배치 모드" src="https://github.com/user-attachments/assets/ea51b3d9-6178-45a6-a3da-e6c933f64012" />
+
 
 ## Architecture
 
-<!-- 📸 사진: 아키텍처 그래프 다이어그램 -->
-<!-- 경로: GitHub 업로드 이미지 (기존 Graph 제출용) -->
+<img width="2448" height="3764" alt="Graph 제출용" src="https://github.com/user-attachments/assets/5455bb17-c9e8-4318-ac1c-27c2978fe786" />
 
-<img width="2448" height="3764" alt="Graph 제출용" src="https://github.com/user-attachments/assets/47f5768d-fad6-4ae4-83aa-d42b2462adcd" />
 
 ---
 
@@ -177,11 +142,9 @@
 에이전트가 "감"이 아닌 "근거"로 판단하도록, 4개 도메인 PDF를 FAISS 벡터스토어에 인덱싱하고 Corrective RAG로 검색합니다. 에너지 산업은 정책 의존도가 높아 최신 법령·가이드라인·정부 자료 grounding이 핵심입니다.
 
 ```
-질의 → FAISS Top-5 검색 (bge-m3)
-        → LLM 관련성 평가 (binary yes/no)
-        → 관련 문서 50%+ → 컨텍스트 사용
-        → 관련 문서 50%- → 쿼리 리라이트 → 재검색
-        → 여전히 부족    → 웹 검색 폴백 (Tavily)
+<img width="2804" height="1704" alt="CRAG 파이프라인" src="https://github.com/user-attachments/assets/838495e9-8768-41a5-b221-72f4ff613b57" />
+
+
 ```
 
 <img width="2804" height="1704" alt="CRAG 파이프라인" src="https://github.com/user-attachments/assets/4f576313-2b62-4057-9900-21f2dfb607f9" />
