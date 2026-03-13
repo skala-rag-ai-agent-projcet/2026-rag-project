@@ -149,6 +149,9 @@
 
 에이전트가 "감"이 아닌 "근거"로 판단하도록, 4개 도메인 PDF를 FAISS 벡터스토어에 인덱싱하고 Corrective RAG로 검색합니다. 에너지 산업은 정책 의존도가 높아 최신 법령·가이드라인·정부 자료 grounding이 핵심입니다.
 
+<img width="2804" height="1704" alt="CRAG 파이프라인" src="https://github.com/user-attachments/assets/46234203-30a0-40c2-a843-363ff7f0da31" />
+
+
 
 ### RAG 문서 (4개 PDF → 174 청크)
 
