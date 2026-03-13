@@ -183,7 +183,7 @@ ai-startup-investment-agent/
 
 ## Contributors
 
-| 양정우 (PM) <br> [@mrangjw](https://github.com/mrangjw) | 박지현 <br> [@pjhyun0225](https://github.com/pjhyun0225) | 정재환 <br> [@hwnnn](https://github.com/hwnnn) | 이채연 <br> [@coduslee](https://github.com/coduslee) |
+| 양정우  <br> [@mrangjw](https://github.com/mrangjw) | 박지현 <br> [@pjhyun0225](https://github.com/pjhyun0225) | 정재환 <br> [@hwnnn](https://github.com/hwnnn) | 이채연 <br> [@coduslee](https://github.com/coduslee) |
 |:---:|:---:|:---:|:---:|
 | <img width="150" src="https://avatars.githubusercontent.com/u/157506327?v=4"/> | <img width="150" src="https://avatars.githubusercontent.com/u/82721608?v=4"/> | <img width="150" src="https://avatars.githubusercontent.com/u/169510824?v=4"/> | <img width="150" src="https://avatars.githubusercontent.com/u/260080132?v=4"/> |
 | 스타트업 탐색 에이전트<br>투자 판단 에이전트<br>Corrective RAG 파이프라인<br>평가 검증 (RAGAS + Ablation) | 기술 분석 에이전트<br>투자 보고서 생성 에이전트 | 시장·정책 분석 에이전트<br>도메인 체크 에이전트<br>프롬프트 엔지니어링 | 경쟁사 분석 에이전트<br>도메인 데이터 큐레이션 (PDF 4종)<br>Streamlit UI |
