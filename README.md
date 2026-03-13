@@ -104,16 +104,24 @@
 | **Investment Decision** | 9개 기준 가중 평가 + 투자 판정 | Corrective RAG | → 항목별 점수, 총점, invest/reject |
 | **Report Writer** | 8페이지 투자 보고서 생성 | - | → Markdown + PDF 보고서 |
 
-### 파이프라인 흐름
-
-<img width="3004" height="4084" alt="싱글 모드" src="https://github.com/user-attachments/assets/e9483137-ef6a-4fe0-b027-6f727d03b674" />
-<img width="2884" height="5140" alt="배치 모드" src="https://github.com/user-attachments/assets/ea51b3d9-6178-45a6-a3da-e6c933f64012" />
-
 
 ## Architecture
 
 <img width="2448" height="3764" alt="Graph 제출용" src="https://github.com/user-attachments/assets/5455bb17-c9e8-4318-ac1c-27c2978fe786" />
 
+## Architecture Update
+
+- **경쟁사 분석 구조 변경**  
+  경쟁사 분석은 별도의 RAG 기반 탐색 단계가 아니라, 기술 분석과 시장 및 정책 분석의 출력값을 활용하는 후속 비교 단계로 변경하였다. 이를 통해 중복 검색을 줄이고 분석 흐름의 선후 관계를 명확히 하였다.
+
+- **Domain Check Agent 추가**  
+  초기 탐색 단계에서 특정 도메인을 직접 제한할 경우, 후보군이 투자 가능성이 높은 기업 중심으로 편향될 수 있었다. 이를 보완하기 위해 복수의 스타트업 후보를 먼저 수집한 뒤, Domain Check Agent가 각 기업에 대해 도메인 적합성을 검증하도록 구조를 변경하였다.
+
+- **분석 및 검증 흐름 재정리**  
+  도메인 확인 이후 기술 분석과 시장 및 정책 분석을 우선 수행하고, 그 결과를 통합한 뒤 경쟁사 분석으로 연결하도록 조정하였다. 또한 투자 판단 전 입력 검증과 투자 판단 후 평가 지표 반영 여부 확인 단계를 추가하여 최종 판단의 완결성과 신뢰성을 높였다.
+
+- **분기 처리 강화**  
+  단계별로 분기 처리 로직을 추가하여, 조건 미충족 상태에서 다음 단계로 진행되는 오류를 방지하고 보고서 정확도를 높이고자 하였다.
 
 ---
 
